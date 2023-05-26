@@ -13,6 +13,8 @@ namespace Persistence.Configurations
             builder.Property(property => property.Name)
                                                  .HasMaxLength(250)
                                                  .IsRequired();
+            builder.Property(property => property.Image)
+                                                 .IsRequired();
             builder.Property(property => property.LastName)
                                                  .HasMaxLength(250)
                                                  .IsRequired();

@@ -7,6 +7,7 @@ namespace Domain.Entities
         private int _edad;
         public int UserId { get; set; }
         public string Name { get; set; }
+        public byte[] Image { get; set; }
         public string LastName { get; set; }
         public string? SecondLastName { get; set; }
         public DateTime DateOfBirth { get; set; }
