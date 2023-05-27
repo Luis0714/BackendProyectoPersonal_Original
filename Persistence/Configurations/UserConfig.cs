@@ -28,8 +28,7 @@ namespace Persistence.Configurations
             builder.Property(property => property.Email)
                                                 .HasMaxLength(100)
                                                 .IsRequired();
-            builder.Property(property => property.AddressId)
-                                                .IsRequired();
+            builder.Property(property => property.AddressId);
             builder.Property(property => property.RolId)
                                                 .IsRequired();
             builder.Property(property => property.DocumentTypeId)

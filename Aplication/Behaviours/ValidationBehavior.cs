@@ -20,7 +20,7 @@ namespace Application.Behaviours
                 var validatorResults = await Task.WhenAll(_validators.Select(validation => validation.ValidateAsync(context, cancellationToken)));
                 var failures = validatorResults.SelectMany(error => error.Errors).Where(error => error != null).ToList();
                 if (failures.Count != 0)
-                    throw new Execteptions.ValidationExeption(failures);
+                    throw new Execteptions.ValidationException(failures);
             }
             return await next();
         }

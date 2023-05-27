@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\Users\Commands\DeleteUserCommand\NewFolder\**" />
+    <Compile Remove="Features\Users\Commands\UpdateUserCommand\NewFolder\**" />
+    <EmbeddedResource Remove="Features\Users\Commands\DeleteUserCommand\NewFolder\**" />
+    <EmbeddedResource Remove="Features\Users\Commands\UpdateUserCommand\NewFolder\**" />
+    <None Remove="Features\Users\Commands\DeleteUserCommand\NewFolder\**" />
+    <None Remove="Features\Users\Commands\UpdateUserCommand\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
@@ -14,16 +23,21 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
     <PackageReference Include="MediatR" Version="12.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.30.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTO%27s\" />
+    <Folder Include="Constants\" />
     <Folder Include="Features\Users\Commands\DeleteUserCommand\" />
     <Folder Include="Features\Users\Commands\UpdateUserCommand\" />
-    <Folder Include="Features\Users\Querys\GetAllUsers\" />
     <Folder Include="Features\Users\Querys\GetUserById\" />
     <Folder Include="Filters\" />
-    <Folder Include="Mappings\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,12 +46,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MessageErros.resx</DependentUpon>
     </Compile>
+    <Compile Update="Execteptions\User\MessageUserErrors.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MessageUserErrors.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Execteptions\MessageErros.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MessageErros.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Execteptions\User\MessageUserErrors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageUserErrors.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

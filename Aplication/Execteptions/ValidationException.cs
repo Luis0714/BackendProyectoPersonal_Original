@@ -2,15 +2,15 @@
 
 namespace Application.Execteptions
 {
-    public class ValidationExeption : Exception
+    public class ValidationException : Exception
     {
-        public ValidationExeption() :base(MessageErros.ValidationMessage)
-        { 
+        public ValidationException() : base(MessageErros.ValidationMessage)
+        {
             Errors = new List<string>();
         }
-        public List<string> Errors { get;}
+        public List<string> Errors { get; }
 
-        public ValidationExeption(IEnumerable<ValidationFailure> failures) : this()
+        public ValidationException(IEnumerable<ValidationFailure> failures) : this()
         {
             foreach (var failure in failures)
             {
