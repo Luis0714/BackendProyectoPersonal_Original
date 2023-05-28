@@ -133,7 +133,7 @@
     <value>La imagen es requerida</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>La Contraseña o Email es incorrectos</value>
+    <value>La Contraseña o el Usuario son incorrectos</value>
   </data>
   <data name="LastNameRequared" xml:space="preserve">
     <value>El primer apellido es requerido</value>

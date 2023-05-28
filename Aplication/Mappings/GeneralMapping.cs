@@ -1,4 +1,5 @@
-﻿using Application.Features.Users.Commands.CrateUserCommand;
+﻿using Application.DTO_s;
+using Application.Features.Users.Commands.CrateUserCommand;
 using AutoMapper;
 using Domain.Entities;
 
@@ -10,6 +11,7 @@ namespace Application.Mappings
         {
             #region Commands User
             CreateMap<CreateUserCommand, User>();
+            CreateMap<User, UserDTO>();
             #endregion
         }
     }

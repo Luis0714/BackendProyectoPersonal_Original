@@ -106,7 +106,7 @@ namespace Application.Execteptions.User {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a La Contraseña o Email es incorrectos.
+        ///   Busca una cadena traducida similar a La Contraseña o el Usuario son incorrectos.
         /// </summary>
         internal static string InvalidCredentials {
             get {
