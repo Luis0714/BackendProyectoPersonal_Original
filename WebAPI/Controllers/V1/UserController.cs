@@ -1,5 +1,6 @@
 ﻿using Application.Features.Users.Commands.CrateUserCommand;
 using Application.Features.Users.Querys.GetAllUsers;
+using Application.Features.Users.Querys.GetUserById;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,9 +19,16 @@ namespace WebAPI.Controllers.V1
         [Authorize(Policy = "SuperAdmin")]
         [HttpGet]
         [Route("getAllUsers")]
-        public async Task<IActionResult> GetAll(GetAllUsers user)
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(user));
+            return Ok(await Mediator.Send(new GetAllUsers()));
+        }
+        [Authorize(Policy = "SuperAdmin")]
+        [HttpGet]
+        [Route("getUserById")]
+        public async Task<IActionResult> GetById(GetUserById userId)
+        {
+            return Ok(await Mediator.Send(userId));
         }
     }
 }

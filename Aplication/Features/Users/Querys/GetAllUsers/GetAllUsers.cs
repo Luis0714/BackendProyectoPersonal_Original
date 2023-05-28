@@ -1,18 +1,18 @@
 ﻿using Application.DTO_s;
 using Application.Espesification;
-using Application.Features.Users.Querys.GetUserAdmin;
 using Application.Interfaces;
+using Application.Whappers;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
 
 namespace Application.Features.Users.Querys.GetAllUsers
 {
-    public class GetAllUsers : IRequest<List<UserDTO>>
+    public class GetAllUsers : IRequest<Response<List<UserDTO>>>
     {
 
     }
-    public class GetAlluserHandler : IRequestHandler<GetAllUsers, List<UserDTO>>
+    public class GetAlluserHandler : IRequestHandler<GetAllUsers, Response<List<UserDTO>>>
     {
         private readonly IRepositoryAsync<User> _repositoryAsync;
         private readonly IMapper _mapper;
@@ -22,7 +22,7 @@ namespace Application.Features.Users.Querys.GetAllUsers
             _mapper = mapper;
         }
 
-        public async Task<List<UserDTO>> Handle(GetAllUsers request, CancellationToken cancellationToken)
+        public async Task<Response<List<UserDTO>>> Handle(GetAllUsers request, CancellationToken cancellationToken)
         {
             var lista = await _repositoryAsync.ListAsync(new GetAllUserSpecification());
             var result = new List<UserDTO>();
@@ -32,7 +32,7 @@ namespace Application.Features.Users.Querys.GetAllUsers
                 userDTO.Edad = new DateTime(DateTime.Now.Subtract(userDTO.DateOfBirth).Ticks).Year - 1;
                 result.Add(userDTO);
             });
-            return result;
+            return new Response<List<UserDTO>>(result);
         }
     }
 }

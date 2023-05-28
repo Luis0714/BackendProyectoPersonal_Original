@@ -142,6 +142,15 @@ namespace Application.Execteptions.User {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se proporciono ningun token de auntorizacion.
+        /// </summary>
+        internal static string NotToken {
+            get {
+                return ResourceManager.GetString("NotToken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El numero de telefono debe ser de 10 caracteres.
         /// </summary>
         internal static string NumberPhoneLength {

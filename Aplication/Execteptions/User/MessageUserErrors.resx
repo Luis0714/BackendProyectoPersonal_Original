@@ -144,6 +144,9 @@
   <data name="NameRequared" xml:space="preserve">
     <value>El nombre es requerido</value>
   </data>
+  <data name="NotToken" xml:space="preserve">
+    <value>No se proporciono ningun token de auntorizacion</value>
+  </data>
   <data name="NumberPhoneLength" xml:space="preserve">
     <value>El numero de telefono debe ser de 10 caracteres</value>
   </data>
