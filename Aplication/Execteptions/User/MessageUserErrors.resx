@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CreatedUser" xml:space="preserve">
+    <value>El Usuario se ha creado exitosamente</value>
+  </data>
   <data name="DateOfBirthRequeared" xml:space="preserve">
     <value>La fecha de nacimiento es requerida</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="RolIdRequared" xml:space="preserve">
     <value>El rol es requerido</value>
+  </data>
+  <data name="TokenAuthorization" xml:space="preserve">
+    <value>Token de autorizacion</value>
   </data>
   <data name="UserNotRegistered" xml:space="preserve">
     <value>El usuario no esta registrado</value>

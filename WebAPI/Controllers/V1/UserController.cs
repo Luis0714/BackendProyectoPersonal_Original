@@ -8,7 +8,7 @@ namespace WebAPI.Controllers.V1
     [ApiVersion("1.0")]
     public class UserController : BaseApiController
     {
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         [Route("createUser")]
         public async Task<IActionResult> Create(CreateUserCommand user)

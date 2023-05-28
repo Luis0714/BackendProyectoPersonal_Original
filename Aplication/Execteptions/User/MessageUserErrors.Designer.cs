@@ -61,6 +61,15 @@ namespace Application.Execteptions.User {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El Usuario se ha creado exitosamente.
+        /// </summary>
+        internal static string CreatedUser {
+            get {
+                return ResourceManager.GetString("CreatedUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a La fecha de nacimiento es requerida.
         /// </summary>
         internal static string DateOfBirthRequeared {
@@ -183,6 +192,15 @@ namespace Application.Execteptions.User {
         internal static string RolIdRequared {
             get {
                 return ResourceManager.GetString("RolIdRequared", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Token de autorizacion.
+        /// </summary>
+        internal static string TokenAuthorization {
+            get {
+                return ResourceManager.GetString("TokenAuthorization", resourceCulture);
             }
         }
         

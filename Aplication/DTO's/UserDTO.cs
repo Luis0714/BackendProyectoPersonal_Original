@@ -10,6 +10,7 @@
         public DateTime DateOfBirth { get; set; }
         public string numberPhone { get; set; }
         public string Document { get; set; }
+        public string Email { get; set; }
         public int DocumentTypeId { get; set; }
         public int? AddressId { get; set; }
         public int RolId { get; set; }

@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.DTO_s;
+using Application.Execteptions.User;
+using Application.Interfaces;
 using Application.SecurityServices;
 using Application.Whappers;
 using AutoMapper;
@@ -7,7 +9,7 @@ using MediatR;
 
 namespace Application.Features.Users.Commands.CrateUserCommand
 {
-    public class CreateUserCommand : IRequest<Response<int>>
+    public class CreateUserCommand : IRequest<Response<UserDTO>>
     {
         public string Name { get; set; }
         public byte[] Image { get; set; }
@@ -23,7 +25,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         public int RolId { get; set; }
     }
 
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response<int>>
+    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response<UserDTO>>
     {
        
         private readonly IMapper _mapper;
@@ -35,12 +37,13 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             _repositoryAsync = repositoryAsync;
         }
 
-        public async Task<Response<int>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<Response<UserDTO>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-          var record = _mapper.Map<User>(request);
-          record.Password = EncryptPassword.Encrypt(record.Password);
-          var data = await _repositoryAsync.AddAsync(record);
-          return new Response<int>(data.UserId);
+            var record = _mapper.Map<User>(request);
+            record.Password = EncryptPassword.Encrypt(record.Password);
+            var data = await _repositoryAsync.AddAsync(record);
+            var result = _mapper.Map<UserDTO>(data);
+            return new Response<UserDTO>(result,MessageUserErrors.CreatedUser);
         }
     }
 }

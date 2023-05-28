@@ -9,10 +9,10 @@ namespace WebAPI.Controllers.V1
     {
         [AllowAnonymous]
         [HttpPost]
-        [Route("autenticate")]
+        [Route("authenticate")]
         public async Task<IActionResult> Autenticate(GetUserAccessCredentials user)
         {
-            return Ok(new {Token = await Mediator.Send(user) });
+            return Ok(await Mediator.Send(user));
         }
     }
 }
