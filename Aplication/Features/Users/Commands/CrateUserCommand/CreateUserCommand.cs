@@ -1,5 +1,7 @@
 ﻿using Application.DTO_s;
+using Application.Espesification;
 using Application.Execteptions.User;
+using Application.Execteptions.Validation;
 using Application.Interfaces;
 using Application.SecurityServices;
 using Application.Whappers;
@@ -12,7 +14,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
     public class CreateUserCommand : IRequest<Response<UserDTO>>
     {
         public string Name { get; set; }
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
         public string LastName { get; set; }
         public string SecondLastName { get; set; }
         public DateTime DateOfBirth { get; set; }
@@ -21,7 +23,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         public string Email { get; set; }
         public string Password { get; set; }
         public int DocumentTypeId { get; set; }
-        public int AddressId { get; set; }
+        public string Address { get; set; }
         public int RolId { get; set; }
     }
 
@@ -41,8 +43,20 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         {
             var record = _mapper.Map<User>(request);
             record.Password = EncryptPassword.Encrypt(record.Password);
-            var data = await _repositoryAsync.AddAsync(record);
-            var result = _mapper.Map<UserDTO>(data);
+            var usuarioExistente = await _repositoryAsync.ListAsync(new AdmindSpesification(request.Email, record.Password));
+            var result = new UserDTO();
+            if (usuarioExistente.Count > 0) throw new ApiException(MessageUserErrors.UserExist);
+            try
+            {
+                var data = await _repositoryAsync.AddAsync(record);
+                result = _mapper.Map<UserDTO>(data);
+            }
+            catch (Exception ex)
+            {
+                throw new ApiException(ex.Message, ex);
+            }
+           
+           
             return new Response<UserDTO>(result,MessageUserErrors.CreatedUser);
         }
     }

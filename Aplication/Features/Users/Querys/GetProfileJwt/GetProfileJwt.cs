@@ -33,7 +33,7 @@ namespace Application.Features.Users.Querys.GetProfileJwt
         public async Task<Response<UserDTO>> Handle(GetProfileJwt request, CancellationToken cancellationToken)
         {
             var userId = _jwtService.GetIdUserInToken(request.HttpContext);
-            var user = await _repositoryAsync.GetByIdAsync(16);
+            var user = await _repositoryAsync.GetByIdAsync(userId);
             var result = _mapper.Map<UserDTO>(user);
             return new Response<UserDTO>(result);
         }

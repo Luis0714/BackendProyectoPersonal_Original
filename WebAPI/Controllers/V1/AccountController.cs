@@ -1,6 +1,5 @@
 ﻿using Application.Features.Users.Querys.GetProfileJwt;
 using Application.Features.Users.Querys.GetUserAdmin;
-using ChustaSoft.Tools.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

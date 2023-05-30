@@ -70,6 +70,15 @@ namespace Application.Execteptions.User {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error al crear el usuario.
+        /// </summary>
+        internal static string CreateUserError {
+            get {
+                return ResourceManager.GetString("CreateUserError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a La fecha de nacimiento es requerida.
         /// </summary>
         internal static string DateOfBirthRequeared {
@@ -102,6 +111,15 @@ namespace Application.Execteptions.User {
         internal static string EmailRequared {
             get {
                 return ResourceManager.GetString("EmailRequared", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error al cargar la imagen.
+        /// </summary>
+        internal static string ErrorUploadImage {
+            get {
+                return ResourceManager.GetString("ErrorUploadImage", resourceCulture);
             }
         }
         
@@ -210,6 +228,15 @@ namespace Application.Execteptions.User {
         internal static string TokenAuthorization {
             get {
                 return ResourceManager.GetString("TokenAuthorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El Usuario ya esta registrado.
+        /// </summary>
+        internal static string UserExist {
+            get {
+                return ResourceManager.GetString("UserExist", resourceCulture);
             }
         }
         
