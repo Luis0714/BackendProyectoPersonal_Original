@@ -1,4 +1,5 @@
 ﻿using Application.Features.Users.Commands.CrateUserCommand;
+using Application.Features.Users.Commands.ResetPassword;
 using Application.Features.Users.Querys.GetAllUsers;
 using Application.Features.Users.Querys.GetUserById;
 using Microsoft.AspNetCore.Authorization;
@@ -29,6 +30,14 @@ namespace WebAPI.Controllers.V1
         public async Task<IActionResult> GetById(GetUserById userId)
         {
             return Ok(await Mediator.Send(userId));
+        }
+
+        [Authorize(Policy = "SuperAdmin")]
+        [HttpGet]
+        [Route("resetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPassword email)
+        {
+            return Ok(await Mediator.Send(email));
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Application.Features.Users.Querys.GetUserAdmin;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers.V1
