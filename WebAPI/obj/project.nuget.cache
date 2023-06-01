@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F2o9lq5ZFDJfuLhZNl2GbZGyeOLHp+vciZqK4k+Yxft5tvdvtbXjLsccA2gC/GACIiMLFaVNYe6F4hmh95uVpA==",
+  "dgSpecHash": "BiDOLxNkfUJdrq9tnXULfx2EzlWRbBw4qrwJa9M1SZuuYkJdKSXxNeeOyTF5HnbRUNhYHSEQs6RtVhtkiiF6jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\chustasoft.tools.authorization\\4.1.0-beta.2\\chustasoft.tools.authorization.4.1.0-beta.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\chustasoft.tools.authorization.abstractions\\4.1.0-beta.2\\chustasoft.tools.authorization.abstractions.4.1.0-beta.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\chustasoft.tools.authorization.jwtbearer\\4.1.0-beta.2\\chustasoft.tools.authorization.jwtbearer.4.1.0-beta.2.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -81,6 +82,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.30.1\\system.identitymodel.tokens.jwt.6.30.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

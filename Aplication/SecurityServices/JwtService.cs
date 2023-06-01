@@ -8,7 +8,7 @@ using Application.Interfaces;
 using Application.DTO_s;
 using Microsoft.AspNetCore.Http;
 using Application.Execteptions.Validation;
-using Application.Execteptions.User;
+using Application.Messages.User;
 
 namespace Application.SecurityServices
 {
@@ -42,7 +42,7 @@ namespace Application.SecurityServices
                   _jwt.Issuer,
                   _jwt.Audience,
                   claims,
-                  expires: DateTime.Now.AddMinutes(60),
+                  expires: DateTime.Now.AddMinutes(120),
                   signingCredentials: credenciales
                 );
             string token = new JwtSecurityTokenHandler().WriteToken(securityToken);

@@ -16,6 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="DTO%27s\LogoSinFondo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
@@ -44,26 +48,44 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Execteptions\MessageErros.Designer.cs">
+    <Compile Update="Messages\Emails\ConstEmail.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ConstEmail.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Messages\MessageErros.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>MessageErros.resx</DependentUpon>
     </Compile>
-    <Compile Update="Execteptions\User\MessageUserErrors.Designer.cs">
+    <Compile Update="Messages\User\MessageUserErrors.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>MessageUserErrors.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Execteptions\MessageErros.resx">
+    <EmbeddedResource Update="Messages\Emails\ConstEmail.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConstEmail.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Messages\MessageErros.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MessageErros.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Execteptions\User\MessageUserErrors.resx">
+    <EmbeddedResource Update="Messages\User\MessageUserErrors.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MessageUserErrors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

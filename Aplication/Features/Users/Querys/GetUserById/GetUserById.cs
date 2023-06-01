@@ -1,7 +1,7 @@
 ﻿using Application.DTO_s;
-using Application.Execteptions.User;
 using Application.Execteptions.Validation;
 using Application.Interfaces;
+using Application.Messages.User;
 using Application.Whappers;
 using AutoMapper;
 using Domain.Entities;

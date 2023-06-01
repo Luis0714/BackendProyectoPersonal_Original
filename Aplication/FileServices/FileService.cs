@@ -1,6 +1,6 @@
-﻿using Application.Execteptions.User;
-using Application.Execteptions.Validation;
+﻿using Application.Execteptions.Validation;
 using Application.Interfaces;
+using Application.Messages.User;
 using Microsoft.AspNetCore.Http;
 
 namespace Application.FileServices

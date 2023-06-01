@@ -10,9 +10,11 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\A
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\refint\Application.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.pdb
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\ref\Application.dll
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Execteptions.MessageErros.resources
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\bin\Debug\net6.0\Domain.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\bin\Debug\net6.0\Domain.pdb
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Execteptions.User.MessageUserErrors.resources
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Properties.Resources.resources
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.Emails.ConstEmail.resources
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.MessageErros.resources
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.User.MessageUserErrors.resources

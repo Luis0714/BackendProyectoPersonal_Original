@@ -123,3 +123,5 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\fr-FR
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\Invio.Extensions.Authentication.JwtBearer.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\SendGrid.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\System.IO.Packaging.dll

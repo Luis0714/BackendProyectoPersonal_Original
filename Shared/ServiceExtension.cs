@@ -10,7 +10,8 @@ namespace Shared
         public static void AddSharedInfraestructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IDateTimeService, DateTimeService>();
-            services.AddTransient<IMessageSender, MessageSender>();
+            services.AddTransient<IMessageSender, MessageSenderService>();
+            services.AddTransient<IPasswordService, PasswordService>();
         }
     }
 }
