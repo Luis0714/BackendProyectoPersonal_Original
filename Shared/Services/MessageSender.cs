@@ -23,9 +23,9 @@ namespace Shared.Services
         private async Task Execute()
         {
             var client = new SendGridClient(_apiKey);
-            var from = new EmailAddress("luis.1702018273@ucaldas.edu.co", "Luis Andrés");
+            var from = new EmailAddress("luian.me0714@gmail.com", "Luis Andrés");
             var subject = "Recuperación de contraseña";
-            var to = new EmailAddress("luian.me0714@gmail.com", "LUIS ANDRES");
+            var to = new EmailAddress("luis.1702018273@ucaldas.edu.co", "LUIS ANDRES");
             var plainTextContent = "EL TEXTO PLANO";
             var htmlContent = "<strong>EL TEXTO HTML</strong>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
