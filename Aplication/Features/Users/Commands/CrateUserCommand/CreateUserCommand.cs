@@ -45,7 +45,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         {
             var record = _mapper.Map<User>(request);
             record.Password = _encrypPasswordService.Encrypt(record.Password);
-            var usuarioExistente = await _repositoryAsync.ListAsync(new AdmindSpesification(request.Email, record.Password));
+            var usuarioExistente = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, record.Password));
             if (usuarioExistente.Count > 0) throw new ApiException(MessageUserErrors.UserExist);
             var data = await _repositoryAsync.AddAsync(record);
             var result = _mapper.Map<UserDTO>(data);

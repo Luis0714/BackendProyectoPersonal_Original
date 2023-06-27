@@ -187,6 +187,15 @@ namespace Application.Messages.User {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a La nueva contraseña no coincide con la confrrmación.
+        /// </summary>
+        internal static string PasswordNotMach {
+            get {
+                return ResourceManager.GetString("PasswordNotMach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a La contraseña es requerida.
         /// </summary>
         internal static string PasswordRequared {

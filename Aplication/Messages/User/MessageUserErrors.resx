@@ -159,6 +159,9 @@
   <data name="NumberPhoneRequared" xml:space="preserve">
     <value>El numero de telefono es requerido</value>
   </data>
+  <data name="PasswordNotMach" xml:space="preserve">
+    <value>La nueva contraseña no coincide con la confrrmación</value>
+  </data>
   <data name="PasswordRequared" xml:space="preserve">
     <value>La contraseña es requerida</value>
   </data>
