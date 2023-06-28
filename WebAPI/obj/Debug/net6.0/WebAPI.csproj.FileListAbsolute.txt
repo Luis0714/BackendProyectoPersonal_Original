@@ -125,3 +125,6 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\SendG
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\StarkbankEcdsa.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\System.IO.Hashing.dll

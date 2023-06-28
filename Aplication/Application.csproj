@@ -23,6 +23,7 @@
     <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.16.0" />
     <PackageReference Include="FluentValidation" Version="11.5.2" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
     <PackageReference Include="Invio.Extensions.Authentication.JwtBearer" Version="2.0.1" />
@@ -37,7 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Constants\" />
     <Folder Include="Features\Users\Commands\DeleteUserCommand\" />
     <Folder Include="Features\Users\Commands\UpdateUserCommand\" />
     <Folder Include="Filters\" />
@@ -48,10 +48,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Constants\UserConst.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserConst.resx</DependentUpon>
+    </Compile>
     <Compile Update="Messages\Emails\ConstEmail.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ConstEmail.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Messages\File\MessageFileErrors.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MessageFileErrors.resx</DependentUpon>
     </Compile>
     <Compile Update="Messages\MessageErros.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -71,9 +81,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Constants\UserConst.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserConst.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Messages\Emails\ConstEmail.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ConstEmail.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Messages\File\MessageFileErrors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageFileErrors.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Messages\MessageErros.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -18,3 +18,5 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\A
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.Emails.ConstEmail.resources
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.MessageErros.resources
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.User.MessageUserErrors.resources
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Constants.UserConst.resources
+C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\obj\Debug\net6.0\Application.Messages.File.MessageFileErrors.resources

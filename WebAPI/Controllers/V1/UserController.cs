@@ -16,21 +16,43 @@ namespace WebAPI.Controllers.V1
         [Route("createUser")]
         public async Task<IActionResult> Create(CreateUserCommand user)
         {
-            return Ok(await Mediator.Send(user));
+            try
+            {
+                return Ok(await Mediator.Send(user));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
+
         [Authorize(Policy = "SuperAdmin")]
         [HttpGet]
         [Route("getAllUsers")]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(new GetAllUsers()));
+            try
+            {
+                return Ok(await Mediator.Send(new GetAllUsers()));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
         [Authorize(Policy = "SuperAdmin")]
         [HttpGet]
         [Route("getUserById")]
         public async Task<IActionResult> GetById(GetUserById userId)
         {
-            return Ok(await Mediator.Send(userId));
+            try 
+            { 
+                return Ok(await Mediator.Send(userId));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize]
@@ -38,7 +60,14 @@ namespace WebAPI.Controllers.V1
         [Route("resetPassword")]
         public async Task<IActionResult> ResetPassword(ResetPasswordCommand email)
         {
-            return Ok(await Mediator.Send(email));
+            try
+            {
+                return Ok(await Mediator.Send(email));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize]
@@ -46,7 +75,14 @@ namespace WebAPI.Controllers.V1
         [Route("changePassword")]
         public async Task<IActionResult> ChangePassword(ChangePasswordCommand credencials)
         {
-            return Ok(await Mediator.Send(credencials));
+            try
+            {
+                return Ok(await Mediator.Send(credencials));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

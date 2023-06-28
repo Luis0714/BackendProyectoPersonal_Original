@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Application.DTO_s;
+using Microsoft.AspNetCore.Http;
 
 namespace Application.Interfaces
 {
     public interface IFileService
     {
-        byte[] UploadFile(IFormFile file);
+        string UploadFile(IFormFile file);
+        Task<FileDownloadDTO> DownloadFile(string ruta);
     }
 }
