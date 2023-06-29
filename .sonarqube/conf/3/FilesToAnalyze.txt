@@ -2,8 +2,6 @@
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Contexts\ApplicationDBContext.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529165947_tercera.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529165947_tercera.Designer.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.Designer.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.Designer.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\ApplicationDBContextModelSnapshot.cs

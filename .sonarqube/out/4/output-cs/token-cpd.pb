@@ -136,7 +136,7 @@ BadRequest%% !
 }&& 
 }'' 	
 }(( 
-})) ­
+})) Ã
 ]C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\Controllers\V1\BaseApiController.cs
 	namespace 	
 WebAPI
@@ -166,16 +166,19 @@ BadRequest%% !
 {		 
 private
 
- 
+ 
+readonly
+
+ 
 	IMediator
 
- 
+ "
 	_mediator
 
- #
+# ,
 ;
 
-# $
+, -
 	protected 
 	IMediator 
 Mediator $

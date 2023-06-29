@@ -2,9 +2,7 @@ d
 [C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Configurations\UserConfig.csutf-8h
 _C:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Contexts\ApplicationDBContext.csutf-8l
 cC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529165947_tercera.csutf-8w
-lC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529165947_tercera.Designer.csutf-8r
-iC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.csutf-8}
-rC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.Designer.csutf-8t
+lC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529165947_tercera.Designer.csutf-8t
 kC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.csutf-8
 tC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.Designer.csutf-8y
 nC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\ApplicationDBContextModelSnapshot.csutf-8g

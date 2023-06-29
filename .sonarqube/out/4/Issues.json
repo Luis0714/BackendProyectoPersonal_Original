@@ -12,6 +12,27 @@
       },
       "results": [
         {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Posible asignación de referencia nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Middlewares/ErrorHandlerMiddleware.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 48,
+                  "endLine": 28,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Posible tipo de valor devuelto de referencia nulo.",
@@ -42,9 +63,9 @@
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Controllers/V1/BaseApiController.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 27,
+                  "startColumn": 36,
                   "endLine": 10,
-                  "endColumn": 36
+                  "endColumn": 45
                 }
               }
             }
@@ -55,30 +76,9 @@
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Controllers/V1/BaseApiController.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 27,
+                  "startColumn": 36,
                   "endLine": 10,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8601",
-          "level": "warning",
-          "message": "Posible asignación de referencia nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Middlewares/ErrorHandlerMiddleware.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 48,
-                  "endLine": 28,
-                  "endColumn": 62
+                  "endColumn": 45
                 }
               }
             }
@@ -97,9 +97,9 @@
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Controllers/V1/BaseApiController.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 27,
+                  "startColumn": 36,
                   "endLine": 10,
-                  "endColumn": 36
+                  "endColumn": 45
                 }
               }
             }
@@ -118,9 +118,9 @@
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Controllers/V1/BaseApiController.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 27,
+                  "startColumn": 36,
                   "endLine": 10,
-                  "endColumn": 36
+                  "endColumn": 45
                 }
               }
             }

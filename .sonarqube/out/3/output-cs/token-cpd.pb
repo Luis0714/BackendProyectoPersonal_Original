@@ -919,45 +919,7 @@ PrimaryKey)) $
 ;11 
 }22 	
 }33 
-}44 …
-iC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.cs
-	namespace 	
-Persistence
- 
-. 
-
-Migrations  
-{ 
-public 
-
-partial 
-class 
-firtMigration &
-:' (
-	Migration) 2
-{		 
-	protected 
-override 
-void 
-Up  "
-(" #
-MigrationBuilder# 3
-migrationBuilder4 D
-)D E
-{ 	
-} 	
-	protected 
-override 
-void 
-Down  $
-($ %
-MigrationBuilder% 5
-migrationBuilder6 F
-)F G
-{ 	
-} 	
-} 
-} õ
+}44 õ
 kC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.cs
 	namespace 	
 Persistence

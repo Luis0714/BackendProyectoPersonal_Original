@@ -45,18 +45,7 @@ cC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230
 ))1 2))6 7
 
 ..  $
-..6 F00 §
-iC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529170355_firtMigration.cs
-
- &
-
-  "
-
-4 D
-
-  $
-
-6 F½
+..6 F00 ½
 kC:\Users\Asus\source\repos\BackendProyectoPersonal\Persistence\Migrations\20230529172324_secundMigration.cs
 
  (
