@@ -12,149 +12,54 @@
       },
       "results": [
         {
-          "ruleId": "CS8601",
-          "level": "warning",
-          "message": "Posible asignación de referencia nula.",
+          "ruleId": "CS0246",
+          "level": "error",
+          "message": "El nombre del tipo o del espacio de nombres 'IDateTimeService' no se encontró (¿falta una directiva using o una referencia de ensamblado?)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/Services/Implementation/MessageSenderService.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 23,
-                  "endLine": 16,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento campo \"_apiKey\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/Services/Implementation/MessageSenderService.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 16,
-                  "endLine": 13,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/Services/Implementation/MessageSenderService.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 33,
-                  "endLine": 12,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1450",
-          "level": "warning",
-          "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/Services/Implementation/MessageSenderService.cs",
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Contexts/ApplicationDBContext.cs",
                 "region": {
                   "startLine": 11,
-                  "startColumn": 41,
+                  "startColumn": 26,
                   "endLine": 11,
-                  "endColumn": 55
+                  "endColumn": 42
                 }
               }
             }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
+          ]
         },
         {
-          "ruleId": "CA1824",
-          "level": "note",
-          "message": "Marcar ensamblados con NeutralResourcesLanguageAttribute",
-          "properties": {
-            "warningLevel": 1
-          }
+          "ruleId": "CS0246",
+          "level": "error",
+          "message": "El nombre del tipo o del espacio de nombres 'IDateTimeService' no se encontró (¿falta una directiva using o una referencia de ensamblado?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Contexts/ApplicationDBContext.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 85,
+                  "endLine": 12,
+                  "endColumn": 101
+                }
+              }
+            }
+          ]
         }
       ],
       "rules": {
-        "CA1824": {
-          "id": "CA1824",
-          "shortDescription": "Marcar ensamblados con NeutralResourcesLanguageAttribute",
-          "fullDescription": "El atributo NeutralResourcesLanguage informa a ResourceManager del lenguaje que se utilizó para mostrar los recursos de una cultura neutral para un ensamblado. Esto mejora el rendimiento de la búsqueda para el primer recurso que cargue y puede reducir el espacio de trabajo.",
-          "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1824",
+        "CS0246": {
+          "id": "CS0246",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0246)",
           "properties": {
-            "category": "Performance",
+            "category": "Compiler",
             "isEnabledByDefault": true,
             "tags": [
-              "PortedFromFxCop",
+              "Compiler",
               "Telemetry",
-              "EnabledRuleInAggressiveMode",
-              "CompilationEnd"
-            ]
-          }
-        },
-        "CS8601": {
-          "id": "CS8601",
-          "shortDescription": "Posible asignación de referencia nula",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8601)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "CS8618": {
-          "id": "CS8618",
-          "shortDescription": "Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "S1450": {
-          "id": "S1450",
-          "shortDescription": "Private fields only used as local variables in methods should become local variables",
-          "fullDescription": "When the value of a private field is always assigned to in a class' methods before being read, then it is not being used to store class information. Therefore, it should become a local variable in the relevant methods to prevent any misunderstanding.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1450",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
+              "NotConfigurable"
             ]
           }
         }
