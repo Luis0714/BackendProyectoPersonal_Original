@@ -1,52 +1,68 @@
 ù
 MC:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\ServiceExtension.cs
-	namespace 	
-Shared
+	namespace 	
+Shared
  
-{ 
-public		 
+{ 
+public 
 
-static		 
-class		 
-ServiceExtension		 (
-{
+static 
+class 
+ServiceExtension (
+{		 
+public
 
- 
-public 
-static 
-void $
-AddSharedInfraestructure 3
-(3 4
-this4 8
-IServiceCollection9 K
-servicesL T
-)T U
-{ 	
+ 
+static
+
+ 
+void
+
+ $
+AddSharedInfraestructure
+
+ 3
+(
+
+3 4
+this
+
+4 8
+IServiceCollection
+
+9 K
+services
+
+L T
+)
+
+T U
+{ 	
+services 
+. 
+AddTransient !
+<! "
+IDateTimeService" 2
+,2 3
+DateTimeService4 C
+>C D
+(D E
+)E F
+;F G
 services 
 . 
 AddTransient !
-<! "
-IDateTimeService" 2
-,2 3
-DateTimeService4 C
->C D
-(D E
-)E F
-;F G
-services 
-. 
-AddTransient !
-<! "
-IMessageEmailSender" 5
-,5 6 
-MessageSenderService7 K
->K L
-(L M
-)M N
-;N O
-} 	
-} 
-} ¢
+<! "
+IMessageEmailSender" 5
+,5 6 
+MessageSenderService7 K
+>K L
+(L M
+)M N
+;N O
+} 	
+} 
+} ¢
 bC:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Services\Abstraction\IDateTimeService.cs
 	namespace 	
 Application

@@ -12,6 +12,27 @@
       },
       "results": [
         {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "El tipo 'IDateTimeService' de 'C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Services\\Abstraction\\IDateTimeService.cs' está en conflicto con el tipo importado 'IDateTimeService' de 'Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Se usará el tipo definido en 'C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Services\\Abstraction\\IDateTimeService.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/Services/Implementation/DateTimeService.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 36,
+                  "endLine": 5,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
           "ruleId": "CS8601",
           "level": "warning",
           "message": "Posible asignación de referencia nula.",
@@ -67,6 +88,27 @@
           }
         },
         {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "El tipo 'IDateTimeService' de 'C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Services\\Abstraction\\IDateTimeService.cs' está en conflicto con el tipo importado 'IDateTimeService' de 'Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Se usará el tipo definido en 'C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Services\\Abstraction\\IDateTimeService.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Shared/ServiceExtension.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
           "ruleId": "S1450",
           "level": "warning",
           "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
@@ -111,6 +153,20 @@
               "Telemetry",
               "EnabledRuleInAggressiveMode",
               "CompilationEnd"
+            ]
+          }
+        },
+        "CS0436": {
+          "id": "CS0436",
+          "shortDescription": "El tipo entra en conflicto con un tipo importado",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0436)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
             ]
           }
         },

@@ -12,54 +12,93 @@
       },
       "results": [
         {
-          "ruleId": "CS0246",
-          "level": "error",
-          "message": "El nombre del tipo o del espacio de nombres 'IDateTimeService' no se encontró (¿falta una directiva using o una referencia de ensamblado?)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Contexts/ApplicationDBContext.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 26,
-                  "endLine": 11,
-                  "endColumn": 42
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CS0246",
-          "level": "error",
-          "message": "El nombre del tipo o del espacio de nombres 'IDateTimeService' no se encontró (¿falta una directiva using o una referencia de ensamblado?)",
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Users\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Contexts/ApplicationDBContext.cs",
                 "region": {
                   "startLine": 12,
-                  "startColumn": 85,
+                  "startColumn": 16,
                   "endLine": 12,
-                  "endColumn": 101
+                  "endColumn": 36
                 }
               }
             }
-          ]
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Contexts/ApplicationDBContext.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 28,
+                  "endLine": 18,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Persistence/Migrations/20230529170355_firtMigration.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
         }
       ],
       "rules": {
-        "CS0246": {
-          "id": "CS0246",
-          "defaultLevel": "error",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0246)",
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
             "tags": [
               "Compiler",
-              "Telemetry",
-              "NotConfigurable"
+              "Telemetry"
+            ]
+          }
+        },
+        "S1186": {
+          "id": "S1186",
+          "shortDescription": "Methods should not be empty",
+          "fullDescription": "There are several reasons for a method not to have a method body:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         }

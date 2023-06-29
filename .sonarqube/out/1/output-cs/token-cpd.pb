@@ -3499,7 +3499,28 @@ nC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Qu
 ;  . /
 }!! 	
 }"" 
-}## ì
+}## œ
+\C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Interfaces\IDateTimeService.cs
+	namespace 	
+Application
+ 
+. 
+
+Interfaces  
+{ 
+public 
+
+	interface 
+IDateTimeService %
+{ 
+DateTime 
+NowUtc 
+{ 
+get 
+; 
+}  
+} 
+} ì
 ZC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Interfaces\IMessageSender.cs
 	namespace 	
 Shared

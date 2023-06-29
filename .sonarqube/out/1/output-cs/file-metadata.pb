@@ -23,7 +23,8 @@ pC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Files\Qu
 nC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Querys\GetAllUsers\GetAllUsers.csutf-8{
 rC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Querys\GetProfileJwt\GetProfileJwt.csutf-8…
 |C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Querys\GetUserAdmin\GetUserAccessCredentials.csutf-8w
-nC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Querys\GetUserById\GetUserById.csutf-8c
+nC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Querys\GetUserById\GetUserById.csutf-8e
+\C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Interfaces\IDateTimeService.csutf-8c
 ZC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Interfaces\IMessageSender.csutf-8e
 \C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Interfaces\IRepositoryAsync.csutf-8a
 XC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Mappings\GeneralMapping.csutf-8o
