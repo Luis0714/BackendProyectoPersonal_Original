@@ -32,8 +32,8 @@ pC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Files\Qu
 †C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Commands\ChangePasswordCommand\ChangePasswordValidator.cs 8r	
 ‚
 Ñ
-{C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Commands\CrateUserCommand\CreateUserCommand.cs 8r8	
- !#$%&()*+,-.0123456789:;<=x‚*+,-23456789:Æ
+{C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Commands\CrateUserCommand\CreateUserCommand.cs 8j&-7r5	
+ !#$%()*+,.012345689:;<=x‚*+,2345689:Æ
 }C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Commands\CrateUserCommand\CreateUserValidator.cs	 8r'	
  !"#$%&'(‚
 !"$%á
@@ -62,7 +62,7 @@ XC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Mappings\GeneralM
 aC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Messages\Validation\ApiException.cs 8r	
 ‚ˆ
 RC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\ServiceExtensions.cs	 8r	
-‚	
+ ‚	
 oC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Services\Abstraction\FileServices\IFileService.csr
 	
 Š

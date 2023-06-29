@@ -77,6 +77,74 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
+          "message": "El elemento propiedad \"Email\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
           "message": "El elemento propiedad \"Errors\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
           "locations": [
             {
@@ -168,108 +236,6 @@
                   "startColumn": 18,
                   "endLine": 24,
                   "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Email\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Errors\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 16,
-                  "endLine": 9,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 29,
-                  "endLine": 22,
-                  "endColumn": 35
                 }
               }
             }
@@ -587,83 +553,15 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "El elemento propiedad \"Image\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 26,
-                  "endLine": 7,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 26,
-                  "endLine": 7,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Ruta\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 23,
-                  "endLine": 8,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 23,
-                  "endLine": 8,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
           "message": "El elemento propiedad \"Errors\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
                 "region": {
-                  "startLine": 16,
+                  "startLine": 9,
                   "startColumn": 16,
-                  "endLine": 16,
+                  "endLine": 9,
                   "endColumn": 24
                 }
               }
@@ -678,40 +576,6 @@
                   "startColumn": 29,
                   "endLine": 22,
                   "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 16,
-                  "endLine": 16,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 18,
-                  "endLine": 24,
-                  "endColumn": 22
                 }
               }
             }
@@ -857,45 +721,71 @@
           }
         },
         {
-          "ruleId": "SYSLIB0023",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "'RNGCryptoServiceProvider' está obsoleto: 'RNGCryptoServiceProvider is obsolete. To generate a random number, use one of the RandomNumberGenerator static methods instead.'",
+          "message": "El elemento propiedad \"Image\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/PasswordService.cs",
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
                 "region": {
-                  "startLine": 15,
-                  "startColumn": 34,
-                  "endLine": 15,
-                  "endColumn": 58
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 31
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 2
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "CS0472",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "El resultado de la expresión siempre es 'true' porque un valor del tipo 'int' nunca es igual a 'NULL' de tipo 'int?'",
+          "message": "El elemento propiedad \"Ruta\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Espesification/GetAllUserSpecification.cs",
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
                 "region": {
-                  "startLine": 10,
-                  "startColumn": 33,
-                  "endLine": 10,
-                  "endColumn": 52
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/FileDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 2
+            "warningLevel": 1
           }
         },
         {
@@ -933,6 +823,74 @@
           }
         },
         {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Errors\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 16,
+                  "endLine": 16,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 29,
+                  "endLine": 22,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 16,
+                  "endLine": 16,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Whappers/Response.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 18,
+                  "endLine": 24,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS1998",
           "level": "warning",
           "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
@@ -945,74 +903,6 @@
                   "startColumn": 49,
                   "endLine": 27,
                   "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Email\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 23,
-                  "endLine": 14,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 23,
-                  "endLine": 14,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 31
                 }
               }
             }
@@ -1192,6 +1082,137 @@
           }
         },
         {
+          "ruleId": "SYSLIB0023",
+          "level": "warning",
+          "message": "'RNGCryptoServiceProvider' está obsoleto: 'RNGCryptoServiceProvider is obsolete. To generate a random number, use one of the RandomNumberGenerator static methods instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/PasswordService.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 34,
+                  "endLine": 15,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0472",
+          "level": "warning",
+          "message": "El resultado de la expresión siempre es 'true' porque un valor del tipo 'int' nunca es igual a 'NULL' de tipo 'int?'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Espesification/GetAllUserSpecification.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 33,
+                  "endLine": 10,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Email\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetUserAdmin/GetUserAccessCredentials.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Posible argumento de referencia nulo para el parámetro \"Email\" en \"GetCurrentUserSpecification.GetCurrentUserSpecification(string Email, string Password)\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/CrateUserCommand/CreateUserCommand.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 101,
+                  "endLine": 52,
+                  "endColumn": 114
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS4014",
           "level": "warning",
           "message": "Como esta llamada no es 'awaited', la ejecución del método actual continuará antes de que se complete la llamada. Puede aplicar el operador 'await' al resultado de la llamada.",
@@ -1234,27 +1255,6 @@
           }
         },
         {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Posible argumento de referencia nulo para el parámetro \"Email\" en \"GetCurrentUserSpecification.GetCurrentUserSpecification(string Email, string Password)\".",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/CrateUserCommand/CreateUserCommand.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 101,
-                  "endLine": 52,
-                  "endColumn": 114
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8602",
           "level": "warning",
           "message": "Desreferencia de una referencia posiblemente NULL.",
@@ -1276,18 +1276,60 @@
           }
         },
         {
-          "ruleId": "S101",
+          "ruleId": "S125",
           "level": "warning",
-          "message": "Rename class 'AdminDTO' to match pascal case naming rules, consider using 'AdminDto'.",
+          "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/CrateUserCommand/CreateUserCommand.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 26
+                  "startLine": 38,
+                  "startColumn": 9,
+                  "endLine": 38,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/CrateUserCommand/CreateUserCommand.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 13,
+                  "endLine": 45,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/CrateUserCommand/CreateUserCommand.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 13,
+                  "endLine": 55,
+                  "endColumn": 76
                 }
               }
             }
@@ -1341,6 +1383,27 @@
         {
           "ruleId": "S101",
           "level": "warning",
+          "message": "Rename class 'AdminDTO' to match pascal case naming rules, consider using 'AdminDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/DTO's/AdminDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
           "message": "Rename class 'JwtDTO' to match pascal case naming rules, consider using 'JwtDto'.",
           "locations": [
             {
@@ -1351,97 +1414,6 @@
                   "startColumn": 18,
                   "endLine": 3,
                   "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 12,
-                  "endLine": 5,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 12,
-                  "endLine": 5,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'ApiException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'ApiException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3241",
-          "level": "warning",
-          "message": "Change return type to 'void'; not a single caller uses the returned value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ChangePasswordCommand/ChangePasswordCommand.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 17,
-                  "endLine": 63,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_webHostEnvironment' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 29,
-                  "endLine": 13,
-                  "endColumn": 48
                 }
               }
             }
@@ -1463,90 +1435,6 @@
                   "startColumn": 18,
                   "endLine": 3,
                   "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_configuration' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 32,
-                  "endLine": 17,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_jwt' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 24,
-                  "endLine": 18,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3241",
-          "level": "warning",
-          "message": "Change return type to 'void'; not a single caller uses the returned value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ResetPasswordCommand/ResetPasswordCommand.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 17,
-                  "endLine": 55,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1450",
-          "level": "warning",
-          "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 32,
-                  "endLine": 17,
-                  "endColumn": 46
                 }
               }
             }
@@ -1642,6 +1530,207 @@
           }
         },
         {
+          "ruleId": "S3241",
+          "level": "warning",
+          "message": "Change return type to 'void'; not a single caller uses the returned value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ChangePasswordCommand/ChangePasswordCommand.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 17,
+                  "endLine": 63,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3925",
+          "level": "warning",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Messages/Validation/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'ApiException' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'ApiException(SerializationInfo, StreamingContext)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_webHostEnvironment' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 29,
+                  "endLine": 13,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_configuration' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 32,
+                  "endLine": 17,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_jwt' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 24,
+                  "endLine": 18,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1450",
+          "level": "warning",
+          "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/SecurityServices/JwtService.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 32,
+                  "endLine": 17,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3241",
+          "level": "warning",
+          "message": "Change return type to 'void'; not a single caller uses the returned value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ResetPasswordCommand/ResetPasswordCommand.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 17,
+                  "endLine": 55,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2016",
+          "level": "note",
+          "message": "Reenviar el parámetro \"cancellationToken\" al método \"GetByIdAsync\" o pasar \"CancellationToken.None\" de forma explícita para indicar que no se propagó el token intencionalmente",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetProfileJwt/GetProfileJwt.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 30,
+                  "endLine": 37,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "ArgumentName": "cancellationToken",
+              "ParameterName": null,
+              "ShouldFix": "1"
+            }
+          }
+        },
+        {
           "ruleId": "CA2016",
           "level": "note",
           "message": "Reenviar el parámetro \"cancellationToken\" al método \"GetByIdAsync\" o pasar \"CancellationToken.None\" de forma explícita para indicar que no se propagó el token intencionalmente",
@@ -1653,6 +1742,32 @@
                   "startLine": 29,
                   "startColumn": 28,
                   "endLine": 29,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "ArgumentName": "cancellationToken",
+              "ParameterName": null,
+              "ShouldFix": "1"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2016",
+          "level": "note",
+          "message": "Reenviar el parámetro \"cancellationToken\" al método \"ListAsync\" o pasar \"CancellationToken.None\" de forma explícita para indicar que no se propagó el token intencionalmente",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetAllUsers/GetAllUsers.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 31,
+                  "endLine": 27,
                   "endColumn": 57
                 }
               }
@@ -1691,74 +1806,6 @@
               "ParameterName": null,
               "ShouldFix": "1"
             }
-          }
-        },
-        {
-          "ruleId": "S3984",
-          "level": "warning",
-          "message": "Throw this exception or remove this useless statement.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 35,
-                  "endLine": 34,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2016",
-          "level": "note",
-          "message": "Reenviar el parámetro \"cancellationToken\" al método \"GetByIdAsync\" o pasar \"CancellationToken.None\" de forma explícita para indicar que no se propagó el token intencionalmente",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetProfileJwt/GetProfileJwt.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 30,
-                  "endLine": 37,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "ArgumentName": "cancellationToken",
-              "ParameterName": null,
-              "ShouldFix": "1"
-            }
-          }
-        },
-        {
-          "ruleId": "S1848",
-          "level": "warning",
-          "message": "Either remove this useless object instantiation of class 'ApiException' or use it.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 35,
-                  "endLine": 34,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -1810,56 +1857,6 @@
               "ArgumentName": "cancellationToken",
               "ParameterName": null,
               "ShouldFix": "1"
-            }
-          }
-        },
-        {
-          "ruleId": "CA2016",
-          "level": "note",
-          "message": "Reenviar el parámetro \"cancellationToken\" al método \"ListAsync\" o pasar \"CancellationToken.None\" de forma explícita para indicar que no se propagó el token intencionalmente",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Querys/GetAllUsers/GetAllUsers.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 31,
-                  "endLine": 27,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "ArgumentName": "cancellationToken",
-              "ParameterName": null,
-              "ShouldFix": "1"
-            }
-          }
-        },
-        {
-          "ruleId": "S1172",
-          "level": "warning",
-          "message": "Remove this unused method parameter 'newPassword'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ChangePasswordCommand/ChangePasswordCommand.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 66,
-                  "endLine": 63,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "IsRemovable": "True"
             }
           }
         },
@@ -1965,6 +1962,72 @@
               "ParameterName": null,
               "ShouldFix": "1"
             }
+          }
+        },
+        {
+          "ruleId": "S1172",
+          "level": "warning",
+          "message": "Remove this unused method parameter 'newPassword'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Features/Users/Commands/ChangePasswordCommand/ChangePasswordCommand.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 66,
+                  "endLine": 63,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "IsRemovable": "True"
+            }
+          }
+        },
+        {
+          "ruleId": "S3984",
+          "level": "warning",
+          "message": "Throw this exception or remove this useless statement.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 35,
+                  "endLine": 34,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1848",
+          "level": "warning",
+          "message": "Either remove this useless object instantiation of class 'ApiException' or use it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/Aplication/Services/Implementation/FileServices/FileService.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 35,
+                  "endLine": 34,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -2226,6 +2289,23 @@
           "fullDescription": "Unused parameters are misleading. Whatever the values passed to such parameters, the behavior will be the same.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1172",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
           "properties": {
             "category": "Major Code Smell",
             "isEnabledByDefault": true,

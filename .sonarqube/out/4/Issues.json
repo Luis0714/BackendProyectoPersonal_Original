@@ -12,27 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "CS8601",
-          "level": "warning",
-          "message": "Posible asignación de referencia nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Middlewares/ErrorHandlerMiddleware.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 48,
-                  "endLine": 28,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Posible tipo de valor devuelto de referencia nulo.",
@@ -79,6 +58,27 @@
                   "startColumn": 36,
                   "endLine": 10,
                   "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Posible asignación de referencia nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Asus/source/repos/BackendProyectoPersonal/WebAPI/Middlewares/ErrorHandlerMiddleware.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 48,
+                  "endLine": 28,
+                  "endColumn": 62
                 }
               }
             }

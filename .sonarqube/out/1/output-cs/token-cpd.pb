@@ -1658,7 +1658,7 @@ ConstEmailAA3 =
 ;U V
 } 	
 } 
-} 6
+} Ú2
 {C:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Features\Users\Commands\CrateUserCommand\CreateUserCommand.cs
 	namespace 	
 Application
@@ -1835,12 +1835,7 @@ ConstEmailAA3 =
 readonly%% "
 IEncrypPasswordService%% /"
 _encrypPasswordService%%0 F
-;%%F G
-private&& 
-readonly&& 
-IUserSerivice&& &
-_userSerivice&&' 4
-;&&4 5
+;%%F G
 public(( $
 CreateUserCommandHandler(( '
 (((' (
@@ -1855,14 +1850,8 @@ ConstEmailAA3 =
 ,((^ _"
 IEncrypPasswordService((` v"
 encrypPasswordService	((w å
-,
-((å ç
-IUserSerivice
-((é õ
-userSerivice
-((ú ®
 )
-((® ©
+((å ç
 {)) 	
 _mapper** 
 =** 
@@ -1875,11 +1864,7 @@ ConstEmailAA3 =
 _encrypPasswordService,, "
 =,,# $!
 encrypPasswordService,,% :
-;,,: ;
-_userSerivice-- 
-=-- 
-userSerivice-- (
-;--( )
+;,,: ;
 }.. 	
 public00 
 async00 
@@ -1984,20 +1969,7 @@ ConstEmailAA3 =
 	UserConst66C L
 .66L M
 defaultImage66M Y
-;66Y Z
-record77 
-.77 
-Edad77 
-=77 
-_userSerivice77 '
-.77' (
-CalcularEdad77( 4
-(774 5
-record775 ;
-.77; <
-DateOfBirth77< G
-)77G H
-;77H I
+;66Y Z
 var88 
 data88 
 =88 
@@ -3942,65 +3914,65 @@ AddMediatR 
 )\ ]
 )] ^
 ;^ _
-services 
-. 
-AddTransient !
-<! "
-IJwtService" -
-,- .
-
-JwtService/ 9
->9 :
-(: ;
-); <
-;< =
 services 
 . 
 AddTransient !
-<! "
-IFileService" .
-,. /
-FileService0 ;
->; <
-(< =
-)= >
-;> ?
+<! "
+IJwtService" -
+,- .
+
+JwtService/ 9
+>9 :
+(: ;
+); <
+;< =
 services 
 . 
 AddTransient !
-<! "
-IUserSerivice" /
-,/ 0
-UserService1 <
->< =
-(= >
-)> ?
-;? @
+<! "
+IFileService" .
+,. /
+FileService0 ;
+>; <
+(< =
+)= >
+;> ?
 services 
 . 
 AddTransient !
-<! "
-IPasswordService" 2
-,2 3
-PasswordService4 C
->C D
-(D E
-)E F
-;F G
+<! "
+IUserSerivice" /
+,/ 0
+UserService1 <
+>< =
+(= >
+)> ?
+;? @
 services 
 . 
 AddTransient !
-<! ""
-IEncrypPasswordService" 8
-,8 9"
-EncryptPasswordService: P
->P Q
-(Q R
-)R S
-;S T
-} 	
-} 
-} Œ
+<! "
+IPasswordService" 2
+,2 3
+PasswordService4 C
+>C D
+(D E
+)E F
+;F G
+services 
+. 
+AddTransient !
+<! ""
+IEncrypPasswordService" 8
+,8 9"
+EncryptPasswordService: P
+>P Q
+(Q R
+)R S
+;S T
+} 	
+} 
+}   Œ
 oC:\Users\Asus\source\repos\BackendProyectoPersonal\Aplication\Services\Abstraction\FileServices\IFileService.cs
 	namespace 	
 Application

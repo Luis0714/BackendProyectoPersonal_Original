@@ -21,6 +21,7 @@ namespace Application
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
             services.AddTransient<IJwtService, JwtService>();
             services.AddTransient<IFileService, FileService>();
             services.AddTransient<IUserSerivice, UserService>();
