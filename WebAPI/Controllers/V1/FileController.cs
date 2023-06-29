@@ -31,7 +31,7 @@ namespace WebAPI.Controllers.V1
         {
             try
             {
-                var response = await Mediator.Send(new DownloadFile() { ruta = ruta });
+                var response = await Mediator.Send(new DownloadFile() { Ruta = ruta });
                 return File(response.Data.Bytes,response.Data.ContentType,Path.GetFileName(ruta));
             }
             catch (Exception ex)

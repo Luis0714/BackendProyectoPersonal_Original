@@ -1,35 +1,31 @@
 ﻿using Application.DTO_s;
-using Application.Espesification;
-using Application.Features.Users.Querys.GetAllUsers;
-using Application.Interfaces;
+using Application.Services.Abstraction.FileServices;
 using Application.Whappers;
-using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
 namespace Application.Features.Files.Querys
 {
     public class DownloadFile : IRequest<Response<FileDownloadDTO>>
     {
-        public string ruta { get; set; }
+        public string? Ruta { get; set; }
     }
 public class DownloadFileHandler : IRequestHandler<DownloadFile, Response<FileDownloadDTO>>
 {
-    private readonly IRepositoryAsync<User> _repositoryAsync;
-    private readonly IMapper _mapper;
     private readonly IFileService _fileService;
 
-        public DownloadFileHandler(IRepositoryAsync<User> repositoryAsync, IMapper mapper, IFileService fileService = null)
+        public DownloadFileHandler(IFileService fileService)
         {
-            _repositoryAsync = repositoryAsync;
-            _mapper = mapper;
             _fileService = fileService;
         }
 
         public async Task<Response<FileDownloadDTO>> Handle(DownloadFile request, CancellationToken cancellationToken)
         {
-            var response = await _fileService.DownloadFile(request.ruta);
-            return new Response<FileDownloadDTO>(response);
+            if (request.Ruta != default)
+            {
+                var response = await _fileService.DownloadFile(request.Ruta);
+                return new Response<FileDownloadDTO>(response);
+            }
+            return new Response<FileDownloadDTO>();
         }
         
     }

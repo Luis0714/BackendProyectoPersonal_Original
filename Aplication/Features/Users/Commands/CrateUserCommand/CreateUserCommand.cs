@@ -4,7 +4,8 @@ using Application.Espesification;
 using Application.Execteptions.Validation;
 using Application.Interfaces;
 using Application.Messages.User;
-using Application.SecurityServices;
+using Application.Services.Abstraction.SecurityServices;
+using Application.Services.Abstraction.UsersServices;
 using Application.Whappers;
 using AutoMapper;
 using Domain.Entities;
@@ -34,12 +35,14 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         private readonly IMapper _mapper;
         private readonly IRepositoryAsync<User> _repositoryAsync;
         private readonly IEncrypPasswordService _encrypPasswordService;
+        private readonly IUserSerivice _userSerivice;
 
-        public CreateUserCommandHandler(IMapper mapper, IRepositoryAsync<User> repositoryAsync, IEncrypPasswordService encrypPasswordService)
+        public CreateUserCommandHandler(IMapper mapper, IRepositoryAsync<User> repositoryAsync, IEncrypPasswordService encrypPasswordService, IUserSerivice userSerivice)
         {
             _mapper = mapper;
             _repositoryAsync = repositoryAsync;
             _encrypPasswordService = encrypPasswordService;
+            _userSerivice = userSerivice;
         }
 
         public async Task<Response<UserDTO>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
@@ -48,7 +51,8 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             record.Password = _encrypPasswordService.Encrypt(record.Password);
             var usuarioExistente = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, record.Password));
             if (usuarioExistente.Count > 0) throw new ApiException(MessageUserErrors.UserExist);
-            if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.DefaultImageUrl;
+            if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.defaultImage;
+            record.Edad = _userSerivice.CalcularEdad(record.DateOfBirth);
             var data = await _repositoryAsync.AddAsync(record);
             var result = _mapper.Map<UserDTO>(data);
             return new Response<UserDTO>(result,MessageUserErrors.CreatedUser);

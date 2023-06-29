@@ -2,7 +2,7 @@
 using Application.Execteptions.Validation;
 using Application.Interfaces;
 using Application.Messages.User;
-using Application.SecurityServices;
+using Application.Services.Abstraction.SecurityServices;
 using Application.Whappers;
 using Domain.Entities;
 using MediatR;

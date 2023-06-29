@@ -1,5 +1,6 @@
 ﻿using Application.DTO_s;
 using Application.Interfaces;
+using Application.Services.Abstraction.SecurityServices;
 using Application.Whappers;
 using AutoMapper;
 using Domain.Entities;
