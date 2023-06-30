@@ -1,7 +1,0 @@
-﻿C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\ServiceExtension.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Services\Abstraction\IDateTimeService.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Services\Abstraction\IMessageEmailSender.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Services\Implementation\DateTimeService.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Services\Implementation\MessageSenderService.cs
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Messages\Emails\ConstEmail.resx
-C:\Users\Asus\source\repos\BackendProyectoPersonal\Shared\Messages\Password\Contants\PasswordConst.resx
