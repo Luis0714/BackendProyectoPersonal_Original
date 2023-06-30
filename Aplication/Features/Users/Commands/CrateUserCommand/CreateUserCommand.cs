@@ -51,7 +51,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             record.Password = _encrypPasswordService.Encrypt(record.Password);
             var usuarioExistente = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, record.Password));
             if (usuarioExistente.Count > 0) throw new ApiException(MessageUserErrors.UserExist);
-            if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.defaultImage;
+            if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.DEFAULTIMAGE;
             record.Edad = _userSerivice.CalcularEdad(record.DateOfBirth);
             var data = await _repositoryAsync.AddAsync(record);
             var result = _mapper.Map<UserDto>(data);

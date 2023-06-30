@@ -11,15 +11,15 @@ namespace Application.Features.Users.Querys.GetUserAdmin
 {
     public class GetUserAccessCredentials : IRequest<Response<string>>
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
     }
         public class GetUserAccessCredentialsHandler : IRequestHandler<GetUserAccessCredentials, Response<string>>
         {
             private readonly IRepositoryAsync<User> _repositoryAsync;
             private readonly IJwtService _jwtService;
             private readonly IEncrypPasswordService _encrypPasswordService;
-        public GetUserAccessCredentialsHandler(IRepositoryAsync<User> repositoryAsync, IJwtService jwtService, IEncrypPasswordService encrypPasswordService = null)
+        public GetUserAccessCredentialsHandler(IRepositoryAsync<User> repositoryAsync, IJwtService jwtService, IEncrypPasswordService encrypPasswordService)
         {
             _repositoryAsync = repositoryAsync;
             _jwtService = jwtService;

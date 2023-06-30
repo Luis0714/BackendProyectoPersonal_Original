@@ -4,9 +4,9 @@ namespace Application.Espesification
 {
     public class GetUserByEmail : Specification<User>
     {
-        public GetUserByEmail(string Email)
+        public GetUserByEmail(string? Email)
         {
-            Query.Where(user => user.Email == Email);
+            if(!string.IsNullOrEmpty(Email)) Query.Where(user => user.Email == Email);
         }
     }
 }

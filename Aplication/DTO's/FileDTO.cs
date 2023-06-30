@@ -4,7 +4,7 @@ namespace Application.DTO_s
 {
     public class FileDto
     {
-        public IFormFile Image { get; set; }
-        public string Ruta { get; set; }
+        public IFormFile? Image { get; set; }
+        public string? Ruta { get; set; }
     }
 }

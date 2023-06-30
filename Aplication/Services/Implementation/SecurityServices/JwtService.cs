@@ -9,58 +9,76 @@ using Microsoft.AspNetCore.Http;
 using Application.Execteptions.Validation;
 using Application.Messages.User;
 using Application.Services.Abstraction.SecurityServices;
+using Application.Constants;
+using Application.Messages;
 
 namespace Application.Services.Implementation.SecurityServices
 {
     public class JwtService : IJwtService
     {
-        private IConfiguration _configuration;
-        private JwtDto _jwt;
-
+        private readonly IConfiguration _configuration;
         public JwtService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _jwt = _configuration.GetSection("Jwt").Get<JwtDto>();
         }
 
         public string GenerateToken(User user)
         {
-            var claims = new[]
+            var _jwt = _configuration.GetSection(SecurityConst.JWT).Get<JwtDto>();
+            Claim[]? claims = new Claim[] { };
+            if (!string.IsNullOrEmpty(_jwt?.Subject))
             {
+                claims = new[]
+                {
                 new Claim(JwtRegisteredClaimNames.Sub,_jwt.Subject),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-                new Claim("UserId", user.UserId.ToString()),
-                new Claim("Email",user.Email),
-                new Claim("Password",user.Password),
-                new Claim("RolId",user.RolId.ToString())
+                new Claim(UserConst.USERID, user.UserId.ToString()),
+                new Claim(UserConst.EMAIL,user.Email),
+                new Claim(UserConst.PASSWORD,user.Password),
+                new Claim(UserConst.ROLID,user.RolId.ToString())
             };
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
-            var credenciales = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var securityToken = new JwtSecurityToken
-                (
-                  _jwt.Issuer,
-                  _jwt.Audience,
-                  claims,
-                  expires: DateTime.Now.AddMinutes(120),
-                  signingCredentials: credenciales
-                );
-            string token = new JwtSecurityTokenHandler().WriteToken(securityToken);
+            }
+            string token = "";
+            if (string.IsNullOrEmpty(_jwt?.Key))
+                throw new ApiException(MessageErros.ValidationMessage);
+
+            if (!string.IsNullOrEmpty(_jwt.Key))
+            {
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
+                var credenciales = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+                var securityToken = new JwtSecurityToken
+                    (
+                      _jwt.Issuer,
+                      _jwt.Audience,
+                      claims,
+                      expires: DateTime.Now.AddMinutes(120),
+                      signingCredentials: credenciales
+                    );
+
+                token = new JwtSecurityTokenHandler().WriteToken(securityToken);
+            }
             return token;
         }
 
         public int GetIdUserInToken(HttpContext context)
         {
-            string token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            string token = context.Request.Headers[SecurityConst.AUTHORIZATION].ToString().Replace(SecurityConst.BEARER, "");
             if (string.IsNullOrEmpty(token))
                 throw new ApiException(MessageUserErrors.NotToken);
+            
             var claims = validatedToken(token);
-            var userId = claims.FindFirst(claim => claim.Type == "UserId").Value;
+            var userId = claims.FindFirst(claim => claim.Type == UserConst.USERID).Value;
             return int.Parse(userId);
         }
 
         private ClaimsPrincipal validatedToken(string token)
         {
+            var _jwt = _configuration.GetSection(SecurityConst.JWT).Get<JwtDto>();
+            if (string.IsNullOrEmpty(_jwt?.Key))
+            {
+                throw new ArgumentException(MessageErros.ValidationMessage);
+            }
             var tokenValidationParameters = new TokenValidationParameters
             {
                 ValidateIssuer = false,

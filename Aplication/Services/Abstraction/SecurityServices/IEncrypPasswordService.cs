@@ -2,6 +2,6 @@
 {
     public interface IEncrypPasswordService
     {
-        string Encrypt(string password);
+        string Encrypt(string? password);
     }
 }

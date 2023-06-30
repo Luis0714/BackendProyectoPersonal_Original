@@ -12,7 +12,7 @@ namespace Shared.Services
             const string chars = PasswordConst.Characteres;
             byte[] randomBytes = new byte[length];
 
-            using (var rng = new RNGCryptoServiceProvider())
+            using (var rng = RandomNumberGenerator.Create())
             {
                 rng.GetBytes(randomBytes);
             }

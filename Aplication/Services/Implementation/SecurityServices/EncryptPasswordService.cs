@@ -1,24 +1,26 @@
 ﻿using System.Text;
 using System.Security.Cryptography;
 using Application.Services.Abstraction.SecurityServices;
+using Application.Constants;
 
 namespace Application.Services.Implementation.SecurityServices
 {
     public class EncryptPasswordService : IEncrypPasswordService
     {
-        public string Encrypt(string password)
+        public string Encrypt(string? password)
         {
             using (var sha256 = SHA256.Create())
             {
-                byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
                 StringBuilder builder = new StringBuilder();
-
-                for (int i = 0; i < hashedBytes.Length; i++)
+                if (!string.IsNullOrEmpty(password))
                 {
-                    builder.Append(hashedBytes[i].ToString("x2"));
+                    byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                    for (int i = 0; i < hashedBytes.Length; i++)
+                    {
+                        builder.Append(hashedBytes[i].ToString(SecurityConst.X2));
+                    }
                 }
-
-                return builder.ToString();
+               return builder.ToString();
             }
         }
     }

@@ -96,3 +96,7 @@ appsettings.json
 /.vs/BackendProyectoPersonal/FileContentIndex/0abcbe55-6b14-4cea-b69c-c402bc3461ff.vsidx
 /.vs/BackendProyectoPersonal/FileContentIndex/0abcbe55-6b14-4cea-b69c-c402bc3461ff.vsidx
 /.vs/BackendProyectoPersonal/FileContentIndex/8677d5d6-e1b6-4380-b7f2-18d52939317e.vsidx
+*.vsidx
+/Aplication/obj/Debug/net6.0/ref/Application.dll
+/Aplication/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
+/Aplication/obj/Debug/net6.0/refint/Application.dll
