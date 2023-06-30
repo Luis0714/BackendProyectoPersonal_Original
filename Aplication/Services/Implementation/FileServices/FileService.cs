@@ -31,7 +31,10 @@ namespace Application.Services.Implementation.FileServices
 
         public string UploadFile(IFormFile file)
         {
-            if (file.Length == 0) new ApiException(MessageFileErrors.ImagenRequired);
+            if (file.Length == default)
+            {
+                throw new ApiException($"Invalid file length: {file.Length}");
+            }
             var paht = Path.Combine(_webHostEnvironment.ContentRootPath, "ImagesUsers");
 
             if (!Directory.Exists(paht))
