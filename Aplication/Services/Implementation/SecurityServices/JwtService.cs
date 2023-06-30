@@ -25,7 +25,7 @@ namespace Application.Services.Implementation.SecurityServices
         public string GenerateToken(User user)
         {
             var _jwt = _configuration.GetSection(SecurityConst.JWT).Get<JwtDto>();
-            Claim[]? claims = new Claim[] { };
+            Claim[]? claims = Array.Empty<Claim>();
             if (!string.IsNullOrEmpty(_jwt?.Subject))
             {
                 claims = new[]
@@ -66,10 +66,12 @@ namespace Application.Services.Implementation.SecurityServices
             string token = context.Request.Headers[SecurityConst.AUTHORIZATION].ToString().Replace(SecurityConst.BEARER, "");
             if (string.IsNullOrEmpty(token))
                 throw new ApiException(MessageUserErrors.NotToken);
-            
+
             var claims = validatedToken(token);
-            var userId = claims.FindFirst(claim => claim.Type == UserConst.USERID).Value;
-            return int.Parse(userId);
+            var userId = claims.FindFirst(claims => claims.Type == UserConst.USERID);
+            if (userId == null)
+                throw new ApiException(MessageErros.NotFound);
+            return int.Parse(userId.Value);
         }
 
         private ClaimsPrincipal validatedToken(string token)

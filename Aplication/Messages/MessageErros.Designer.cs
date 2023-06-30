@@ -61,6 +61,15 @@ namespace Application.Messages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Recurso no encontrado.
+        /// </summary>
+        internal static string NotFound {
+            get {
+                return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Se han producido uno o más errores de validación.
         /// </summary>
         internal static string ValidationMessage {
