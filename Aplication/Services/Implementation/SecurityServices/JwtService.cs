@@ -15,12 +15,12 @@ namespace Application.Services.Implementation.SecurityServices
     public class JwtService : IJwtService
     {
         private IConfiguration _configuration;
-        private JwtDTO _jwt;
+        private JwtDto _jwt;
 
         public JwtService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _jwt = _configuration.GetSection("Jwt").Get<JwtDTO>();
+            _jwt = _configuration.GetSection("Jwt").Get<JwtDto>();
         }
 
         public string GenerateToken(User user)

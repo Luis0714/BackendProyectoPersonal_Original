@@ -11,7 +11,7 @@ namespace Application.Mappings
         {
             #region Commands User
             CreateMap<CreateUserCommand, User>();
-            CreateMap<User, UserDTO>();
+            CreateMap<User, UserDto>();
             #endregion
         }
     }

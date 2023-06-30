@@ -1,6 +1,7 @@
 ﻿using Application.DTO_s;
 using Application.Execteptions.Validation;
 using Application.Messages.File;
+using Application.Messages.User;
 using Application.Services.Abstraction.FileServices;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,7 +18,7 @@ namespace Application.Services.Implementation.FileServices
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public async Task<FileDownloadDTO> DownloadFile(string ruta)
+        public async Task<FileDownloadDto> DownloadFile(string ruta)
         {
             if (string.IsNullOrEmpty(ruta)) throw new ApiException(MessageFileErrors.Ruta);
             var provider = new FileExtensionContentTypeProvider();
@@ -26,14 +27,14 @@ namespace Application.Services.Implementation.FileServices
                 contentType = "application/octet-stream";
             }
             var bytes = await File.ReadAllBytesAsync(ruta);
-            return new FileDownloadDTO() { Bytes = bytes, ContentType = contentType };
+            return new FileDownloadDto() { Bytes = bytes, ContentType = contentType };
         }
 
         public string UploadFile(IFormFile file)
         {
             if (file.Length == default)
             {
-                throw new ApiException($"Invalid file length: {file.Length}");
+                throw new ApiException(MessageFileErrors.Ruta);
             }
             var paht = Path.Combine(_webHostEnvironment.ContentRootPath, "ImagesUsers");
 

@@ -5,11 +5,11 @@ using MediatR;
 
 namespace Application.Features.Files.Querys
 {
-    public class DownloadFile : IRequest<Response<FileDownloadDTO>>
+    public class DownloadFile : IRequest<Response<FileDownloadDto>>
     {
         public string? Ruta { get; set; }
     }
-public class DownloadFileHandler : IRequestHandler<DownloadFile, Response<FileDownloadDTO>>
+public class DownloadFileHandler : IRequestHandler<DownloadFile, Response<FileDownloadDto>>
 {
     private readonly IFileService _fileService;
 
@@ -18,14 +18,14 @@ public class DownloadFileHandler : IRequestHandler<DownloadFile, Response<FileDo
             _fileService = fileService;
         }
 
-        public async Task<Response<FileDownloadDTO>> Handle(DownloadFile request, CancellationToken cancellationToken)
+        public async Task<Response<FileDownloadDto>> Handle(DownloadFile request, CancellationToken cancellationToken)
         {
             if (request.Ruta != default)
             {
                 var response = await _fileService.DownloadFile(request.Ruta);
-                return new Response<FileDownloadDTO>(response);
+                return new Response<FileDownloadDto>(response);
             }
-            return new Response<FileDownloadDTO>();
+            return new Response<FileDownloadDto>();
         }
         
     }

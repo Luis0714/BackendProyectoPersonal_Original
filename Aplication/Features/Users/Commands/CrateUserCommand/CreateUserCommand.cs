@@ -13,7 +13,7 @@ using MediatR;
 
 namespace Application.Features.Users.Commands.CrateUserCommand
 {
-    public class CreateUserCommand : IRequest<Response<UserDTO>>
+    public class CreateUserCommand : IRequest<Response<UserDto>>
     {
         public string? Name { get; set; }
         public string? Image { get; set; }
@@ -29,7 +29,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
         public int RolId { get; set; }
     }
 
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response<UserDTO>>
+    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response<UserDto>>
     {
        
         private readonly IMapper _mapper;
@@ -45,7 +45,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             _userSerivice = userSerivice;
         }
 
-        public async Task<Response<UserDTO>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<Response<UserDto>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             var record = _mapper.Map<User>(request);
             record.Password = _encrypPasswordService.Encrypt(record.Password);
@@ -54,8 +54,8 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.defaultImage;
             record.Edad = _userSerivice.CalcularEdad(record.DateOfBirth);
             var data = await _repositoryAsync.AddAsync(record);
-            var result = _mapper.Map<UserDTO>(data);
-            return new Response<UserDTO>(result,MessageUserErrors.CreatedUser);
+            var result = _mapper.Map<UserDto>(data);
+            return new Response<UserDto>(result,MessageUserErrors.CreatedUser);
         }
     }
 }

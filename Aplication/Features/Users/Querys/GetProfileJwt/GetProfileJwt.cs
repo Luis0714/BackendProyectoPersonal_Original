@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Application.Features.Users.Querys.GetProfileJwt
 {
-    public class GetProfileJwt : IRequest<Response<UserDTO>>
+    public class GetProfileJwt : IRequest<Response<UserDto>>
     {
         public HttpContext HttpContext { get; set; }
 
@@ -19,7 +19,7 @@ namespace Application.Features.Users.Querys.GetProfileJwt
         }
     }
 
-    public class GetProfileJwtHandler : IRequestHandler<GetProfileJwt, Response<UserDTO>>
+    public class GetProfileJwtHandler : IRequestHandler<GetProfileJwt, Response<UserDto>>
     {
         private readonly IRepositoryAsync<User> _repositoryAsync;
         private readonly IMapper _mapper;
@@ -31,12 +31,12 @@ namespace Application.Features.Users.Querys.GetProfileJwt
             _jwtService = jwtService;
         }
 
-        public async Task<Response<UserDTO>> Handle(GetProfileJwt request, CancellationToken cancellationToken)
+        public async Task<Response<UserDto>> Handle(GetProfileJwt request, CancellationToken cancellationToken)
         {
             var userId = _jwtService.GetIdUserInToken(request.HttpContext);
             var user = await _repositoryAsync.GetByIdAsync(userId);
-            var result = _mapper.Map<UserDTO>(user);
-            return new Response<UserDTO>(result);
+            var result = _mapper.Map<UserDto>(user);
+            return new Response<UserDto>(result);
         }
     }
 }
