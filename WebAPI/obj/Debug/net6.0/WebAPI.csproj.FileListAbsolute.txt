@@ -4,7 +4,6 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAP
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\WebAPI.exe
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
@@ -127,3 +126,5 @@ C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\refin
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\source\repos\BackendProyectoPersonal\WebAPI\bin\Debug\net6.0\appsettings.json

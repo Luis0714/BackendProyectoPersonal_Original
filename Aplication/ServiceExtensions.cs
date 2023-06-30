@@ -9,6 +9,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Services;
+using Shared.Services.Implementation;
 using System.Reflection;
 
 namespace Application
@@ -27,6 +28,7 @@ namespace Application
             services.AddTransient<IUserSerivice, UserService>();
             services.AddTransient<IPasswordService, PasswordService>();
             services.AddTransient<IEncrypPasswordService, EncryptPasswordService>();
+            services.AddTransient<IMessageEmailSender, MessageSenderService>();
         }
     }
 }

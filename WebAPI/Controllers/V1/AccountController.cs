@@ -13,29 +13,14 @@ namespace WebAPI.Controllers.V1
         [Route("authenticate")]
         public async Task<IActionResult> Autenticate(GetUserAccessCredentials user)
         {
-            try
-            {
-                return Ok(await Mediator.Send(user));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-          
+            return Ok(await Mediator.Send(user));
         }
 
         [HttpGet("profile")]
         [Authorize]
         public async Task<IActionResult> GetUserProfile()
         {
-            try
-            {
-                return Ok(await Mediator.Send(new GetProfileJwt(HttpContext)));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await Mediator.Send(new GetProfileJwt(HttpContext)));
         }
     }
 }

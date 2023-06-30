@@ -1,4 +1,4 @@
-﻿namespace Application.Interfaces
+﻿namespace Shared.Services
 {
     public interface IDateTimeService
     {

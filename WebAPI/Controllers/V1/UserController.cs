@@ -16,14 +16,7 @@ namespace WebAPI.Controllers.V1
         [Route("createUser")]
         public async Task<IActionResult> Create(CreateUserCommand user)
         {
-            try
-            {
-                return Ok(await Mediator.Send(user));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await Mediator.Send(user));
         }
 
         [Authorize(Policy = "SuperAdmin")]
@@ -31,28 +24,15 @@ namespace WebAPI.Controllers.V1
         [Route("getAllUsers")]
         public async Task<IActionResult> GetAll()
         {
-            try
-            {
-                return Ok(await Mediator.Send(new GetAllUsers()));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+            return Ok(await Mediator.Send(new GetAllUsers()));
+        } 
+
         [Authorize(Policy = "SuperAdmin")]
         [HttpGet]
         [Route("getUserById")]
         public async Task<IActionResult> GetById(GetUserById userId)
         {
-            try 
-            { 
-                return Ok(await Mediator.Send(userId));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await Mediator.Send(userId));
         }
 
         [Authorize]
@@ -60,14 +40,7 @@ namespace WebAPI.Controllers.V1
         [Route("resetPassword")]
         public async Task<IActionResult> ResetPassword(ResetPasswordCommand email)
         {
-            try
-            {
-                return Ok(await Mediator.Send(email));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await Mediator.Send(email));
         }
 
         [Authorize]
@@ -75,14 +48,7 @@ namespace WebAPI.Controllers.V1
         [Route("changePassword")]
         public async Task<IActionResult> ChangePassword(ChangePasswordCommand credencials)
         {
-            try
-            {
-                return Ok(await Mediator.Send(credencials));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await Mediator.Send(credencials));
         }
     }
 }

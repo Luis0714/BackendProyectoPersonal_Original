@@ -12,19 +12,19 @@ using Shared.Services;
 
 namespace Application.Features.Users.Commands.ResetPassword
 {
-    public class ResetPasswordCommand : IRequest<Response<Response?>>
+    public class ResetPasswordCommand : IRequest<Response<bool>>
     {
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
     }
 
-    public class ResetPasswordHandler : IRequestHandler<ResetPasswordCommand, Response<Response?>>
+    public class ResetPasswordHandler : IRequestHandler<ResetPasswordCommand, Response<bool>>
     {
         private readonly IRepositoryAsync<User> _repositoryAsync;
-        private readonly IMessageSender _messageSender;
+        private readonly IMessageEmailSender _messageSender;
         private readonly IPasswordService _passwordService;
         private readonly IEncrypPasswordService _encrypPasswordService;
-        public ResetPasswordHandler(IRepositoryAsync<User> repositoryAsync, IMessageSender messageSender, IPasswordService passwordService, IEncrypPasswordService encrypPasswordService)
+        public ResetPasswordHandler(IRepositoryAsync<User> repositoryAsync, IMessageEmailSender messageSender, IPasswordService passwordService, IEncrypPasswordService encrypPasswordService)
         {
             _repositoryAsync = repositoryAsync;
             _messageSender = messageSender;
@@ -32,17 +32,17 @@ namespace Application.Features.Users.Commands.ResetPassword
             _encrypPasswordService = encrypPasswordService;
         }
 
-        public async Task<Response<Response?>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
+        public async Task<Response<bool>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
         {
             var lista = await _repositoryAsync.ListAsync(new GetUserByEmail(request.Email));
             var user = lista.FirstOrDefault();
             if (user == null) throw new ApiException(MessageUserErrors.UserExist);
             var response = await sendPassword(user);
-            if(response.Succeeded) _repositoryAsync.UpdateAsync(user);
-            return response;
+            if(response) await _repositoryAsync.UpdateAsync(user);
+            return new Response<bool>(response);
         }
 
-        private async Task<Response<Response?>> sendPassword(User user)
+        private async Task<bool> sendPassword(User user)
         {
             var to = user.Email;
             var newPassword = _passwordService.GeneretePassword(10);

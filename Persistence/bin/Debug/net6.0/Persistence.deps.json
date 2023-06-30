@@ -13,7 +13,8 @@
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.4.23259.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.4.23259.3",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0-preview.4.23259.5"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0-preview.4.23259.5",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Persistence.dll": {}
@@ -118,6 +119,17 @@
           "lib/net6.0/Azure.Storage.Common.dll": {
             "assemblyVersion": "12.15.0.0",
             "fileVersion": "12.1500.23.21104"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.20.0": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.20.0.0",
+            "fileVersion": "2.20.0.0"
           }
         }
       },
@@ -792,6 +804,14 @@
           }
         }
       },
+      "System.IO.Packaging/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -928,10 +948,10 @@
           "Invio.Extensions.Authentication.JwtBearer": "2.0.1",
           "MediatR": "12.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.4.23259.5",
           "Microsoft.IdentityModel.Tokens": "6.30.1",
           "Newtonsoft.Json": "13.0.3",
           "SendGrid": "9.28.1",
+          "Shared": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.30.1"
         },
@@ -942,6 +962,16 @@
       "Domain/1.0.0": {
         "runtime": {
           "Domain.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.20.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0-preview.4.23259.5",
+          "SendGrid": "9.28.1"
+        },
+        "runtime": {
+          "Shared.dll": {}
         }
       }
     }
@@ -1007,6 +1037,13 @@
       "sha512": "sha512-/SAgn9hhjfHO0RPWp0ilGLr3aMPz+rrz6iRgLKTb1708pI78WLtsQ7/kGooUbCU2flSnk/egmJ0Qj9rFVks/nA==",
       "path": "azure.storage.common/12.15.0",
       "hashPath": "azure.storage.common.12.15.0.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml/2.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+oFMsEppo/W6KpGTRXaJl2jTFYn9zeon4FaZuDoCijQ1/0JaPENaCef7d4Y3f8v116eKhVBwd4Ya+/NDglxkjw==",
+      "path": "documentformat.openxml/2.20.0",
+      "hashPath": "documentformat.openxml.2.20.0.nupkg.sha512"
     },
     "FluentValidation/11.5.2": {
       "type": "package",
@@ -1498,6 +1535,13 @@
       "path": "system.io.hashing/6.0.0",
       "hashPath": "system.io.hashing.6.0.0.nupkg.sha512"
     },
+    "System.IO.Packaging/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "path": "system.io.packaging/4.7.0",
+      "hashPath": "system.io.packaging.4.7.0.nupkg.sha512"
+    },
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -1637,6 +1681,11 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -9,10 +9,7 @@
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0-preview.4.23259.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Aplication\Application.csproj" />
+    <PackageReference Include="SendGrid" Version="9.28.1" />
   </ItemGroup>
 
   <ItemGroup>

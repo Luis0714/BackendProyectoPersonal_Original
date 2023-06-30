@@ -1,6 +1,4 @@
-﻿using Application.Interfaces;
-
-namespace Shared.Services.Implementation
+﻿namespace Shared.Services.Implementation
 {
     public class DateTimeService : IDateTimeService
     {

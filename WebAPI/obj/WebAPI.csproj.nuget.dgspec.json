@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Shared.csproj"
               }
             }
           }
@@ -84,10 +87,6 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -224,6 +223,9 @@
               },
               "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Shared\\Shared.csproj"
               }
             }
           }
@@ -303,11 +305,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Aplication\\Application.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\BackendProyectoPersonal\\Aplication\\Application.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -327,6 +325,10 @@
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[8.0.0-preview.4.23259.5, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
             }
           },
           "imports": [

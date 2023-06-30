@@ -1,9 +1,9 @@
-﻿using Application.Whappers;
+﻿using SendGrid;
 
 namespace Shared.Services
 {
     public interface  IMessageEmailSender
     {
-        Task<Response<SendGrid.Response?>> SendEmail(string email, string userName, string subject, string templete);
+        Task<bool> SendEmail(string email, string userName, string subject, string templete);
     }
 }
