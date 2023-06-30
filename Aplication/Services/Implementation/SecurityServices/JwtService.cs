@@ -26,6 +26,8 @@ namespace Application.Services.Implementation.SecurityServices
         {
             var _jwt = _configuration.GetSection(SecurityConst.JWT).Get<JwtDto>();
             Claim[]? claims = Array.Empty<Claim>();
+            if(string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
+                throw new ApiException(MessageErros.ValidationMessage);
             if (!string.IsNullOrEmpty(_jwt?.Subject))
             {
                 claims = new[]

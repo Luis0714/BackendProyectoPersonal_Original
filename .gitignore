@@ -104,3 +104,12 @@ appsettings.json
 /Aplication/obj/Debug/net6.0/Application.Messages.MessageErros.resources
 /Domain/obj/Debug/net6.0/ref/Domain.dll
 /Domain/obj/Debug/net6.0/refint/Domain.dll
+/Aplication/obj/Debug/net6.0/Application.Properties.Resources.resources
+/Shared/obj/Debug/net6.0/ref/Shared.dll
+/Shared/obj/Debug/net6.0/Shared.csproj.CoreCompileInputs.cache
+/Shared/obj/Debug/net6.0/refint/Shared.dll
+/.sonarqube/out/0/output-cs/metrics.pb
+/.sonarqube/out/0/output-cs/symrefs.pb
+/.sonarqube/out/0/output-cs/token-cpd.pb
+/.sonarqube/out/0/output-cs/token-type.pb
+/.sonarqube/out/0/Issues.json
