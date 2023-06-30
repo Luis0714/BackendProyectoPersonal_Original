@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.Messages.User;
 using Application.Services.Abstraction.FileServices;
 using Application.Whappers;
 using Domain.Entities;
@@ -20,10 +21,13 @@ namespace Application.Features.Files.UploadFile
                 _fileService = fileService;
             }
 
-            public async Task<Response<string>> Handle(UploadFileCommand request, CancellationToken cancellationToken)
+            public Task<Response<string>> Handle(UploadFileCommand request, CancellationToken cancellationToken)
             {
+                if (request.File == null) 
+                    throw new ArgumentException(MessageUserErrors.ImageRequared);
                 string ruta = _fileService.UploadFile(request.File);
-                return new Response<string>(ruta,ruta);
+                var result = new Response<string>(ruta, ruta);
+                return Task.FromResult(result);
             }
         }
     }

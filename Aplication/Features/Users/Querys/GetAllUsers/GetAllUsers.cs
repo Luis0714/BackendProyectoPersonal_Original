@@ -24,7 +24,7 @@ namespace Application.Features.Users.Querys.GetAllUsers
 
         public async Task<Response<List<UserDto>>> Handle(GetAllUsers request, CancellationToken cancellationToken)
         {
-            var lista = await _repositoryAsync.ListAsync(new GetAllUserSpecification());
+            var lista = await _repositoryAsync.ListAsync(new GetAllUserSpecification(), cancellationToken);
             var result = new List<UserDto>();
             lista.ForEach(user =>
             {

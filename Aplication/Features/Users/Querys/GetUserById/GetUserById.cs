@@ -26,7 +26,7 @@ namespace Application.Features.Users.Querys.GetUserById
 
         public async Task<Response<UserDto>> Handle(GetUserById request, CancellationToken cancellationToken)
         {
-          var user = await _repositoryAsync.GetByIdAsync(request.UserId);
+          var user = await _repositoryAsync.GetByIdAsync(request.UserId, cancellationToken);
           if (user == null) throw new ApiException(MessageUserErrors.UserNotRegistered);
           var result = _mapper.Map<UserDto>(user);
           return new Response<UserDto>(result);

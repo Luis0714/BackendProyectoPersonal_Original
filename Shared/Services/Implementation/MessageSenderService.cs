@@ -2,21 +2,21 @@
 using SendGrid;
 using Microsoft.Extensions.Configuration;
 using Shared.Messages.Emails;
+using Shared.Contants;
 
 namespace Shared.Services.Implementation
 {
     public class MessageSenderService : IMessageEmailSender
     {
         private readonly IConfiguration _configuration;
-        private readonly string _apiKey;
         public MessageSenderService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _apiKey = _configuration.GetSection("ApiKey").Get<string>();
         }
 
         public async Task<bool> SendEmail(string email, string userName, string subject, string templete)
         {
+            var _apiKey = _configuration.GetSection(GeneralConstants.APIKEY).Get<string>();
             var client = new SendGridClient(_apiKey);
             var from = new EmailAddress(ConstEmail.FormEmail, userName);
             var to = new EmailAddress(email, userName);

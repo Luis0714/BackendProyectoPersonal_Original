@@ -1,6 +1,4 @@
-﻿using SendGrid;
-
-namespace Shared.Services
+﻿namespace Shared.Services
 {
     public interface  IMessageEmailSender
     {

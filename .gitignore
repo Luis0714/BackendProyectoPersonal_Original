@@ -100,3 +100,7 @@ appsettings.json
 /Aplication/obj/Debug/net6.0/ref/Application.dll
 /Aplication/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
 /Aplication/obj/Debug/net6.0/refint/Application.dll
+/Aplication/obj/Debug/net6.0/Application.csproj.GenerateResource.cache
+/Aplication/obj/Debug/net6.0/Application.Messages.MessageErros.resources
+/Domain/obj/Debug/net6.0/ref/Domain.dll
+/Domain/obj/Debug/net6.0/refint/Domain.dll

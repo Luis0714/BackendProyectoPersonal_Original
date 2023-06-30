@@ -36,14 +36,14 @@ namespace Application.Features.Users.Commands.ChangePasswordCommand
 
         async Task<Response<bool>> IRequestHandler<ChangePasswordCommand, Response<bool>>.Handle(ChangePasswordCommand request, CancellationToken cancellationToken)
         {
-            var users = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, request.CurentPassword));
+            var users = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, request.CurentPassword),cancellationToken);
             var user = users.FirstOrDefault();
             if (user == default) throw new ApiException(MessageUserErrors.InvalidCredentials);
             if (request.NewPassword != request.ComfirmNewPassword) throw new ApiException(MessageUserErrors.PasswordNotMach);
             var newPassword = _encrypPasswordService.Encrypt(request.NewPassword);
             user.Password = newPassword;
             var response = await sendComfirmation(user);
-            if (response) await _repositoryAsync.UpdateAsync(user);
+            if (response) await _repositoryAsync.UpdateAsync(user,cancellationToken);
             return new Response<bool>(response);
         }
         private async Task<bool> sendComfirmation(User user)

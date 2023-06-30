@@ -7,7 +7,7 @@ namespace Application.Espesification
     {
         public GetAllUserSpecification()
         {
-            Query.Where(user => user.UserId != null);
+            Query.Where(user => user.UserId != default);
         }
     }
 }

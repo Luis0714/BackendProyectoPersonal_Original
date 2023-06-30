@@ -21,8 +21,17 @@ namespace WebAPI.Controllers.V1
         [Route("download")]
         public async Task<IActionResult> dowload(string ruta)
         {
-            var response = await Mediator.Send(new DownloadFile() { Ruta = ruta });
-            return File(response.Data.Bytes,response.Data.ContentType,Path.GetFileName(ruta));
+            try
+            {
+                var response = await Mediator.Send(new DownloadFile() { Ruta = ruta });
+                if(response.Data?.ContentType != null && response.Data.Bytes != null)
+                    return File(response.Data.Bytes, response.Data.ContentType, Path.GetFileName(ruta));
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+           return BadRequest();
         }
 
 

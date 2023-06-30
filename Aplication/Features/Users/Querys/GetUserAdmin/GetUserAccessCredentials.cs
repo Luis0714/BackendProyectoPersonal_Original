@@ -28,7 +28,7 @@ namespace Application.Features.Users.Querys.GetUserAdmin
 
         public async Task<Response<string>> Handle(GetUserAccessCredentials request, CancellationToken cancellationToken)
         {
-            var users = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, _encrypPasswordService.Encrypt(request.Password)));
+            var users = await _repositoryAsync.ListAsync(new GetCurrentUserSpecification(request.Email, _encrypPasswordService.Encrypt(request.Password)), cancellationToken);
             var user = users.FirstOrDefault();
             if (user == default)
                 throw new ApiException(MessageUserErrors.InvalidCredentials);

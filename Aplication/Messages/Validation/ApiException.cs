@@ -4,6 +4,7 @@ namespace Application.Execteptions.Validation
 {
     public class ApiException : Exception
     {
+      
         public ApiException(): base() 
         {
         }
@@ -16,6 +17,5 @@ namespace Application.Execteptions.Validation
         {
             
         }
-
     }
 }

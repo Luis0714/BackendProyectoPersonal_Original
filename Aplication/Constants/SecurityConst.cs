@@ -6,5 +6,6 @@
         public const string BEARER = "Bearer ";
         public const string X2 = "x2";
         public const string JWT = "Jwt";
+        public const string APIKEY = "ApiKey";
     }
 }

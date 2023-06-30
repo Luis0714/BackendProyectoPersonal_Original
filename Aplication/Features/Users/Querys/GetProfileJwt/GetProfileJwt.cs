@@ -34,7 +34,7 @@ namespace Application.Features.Users.Querys.GetProfileJwt
         public async Task<Response<UserDto>> Handle(GetProfileJwt request, CancellationToken cancellationToken)
         {
             var userId = _jwtService.GetIdUserInToken(request.HttpContext);
-            var user = await _repositoryAsync.GetByIdAsync(userId);
+            var user = await _repositoryAsync.GetByIdAsync(userId,cancellationToken);
             var result = _mapper.Map<UserDto>(user);
             return new Response<UserDto>(result);
         }

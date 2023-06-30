@@ -47,8 +47,12 @@ namespace Application.Features.Users.Commands.ResetPassword
             var to = user.Email;
             var newPassword = _passwordService.GeneretePassword(10);
             var templete = Properties.Resources.ResetPasswordTemplete.ToString();
-            replaceValues(templete, user, newPassword);
+            templete = replaceValues(templete, user, newPassword);
             user.Password = _encrypPasswordService.Encrypt(newPassword);
+
+            if (string.IsNullOrEmpty(user.Email))
+                throw new ApiException(MessageUserErrors.EmailRequared);
+
            return await _messageSender.SendEmail(to, ConstEmail.NameFromEmail, ConstEmail.SubjetResetPassword, templete);
         }
 

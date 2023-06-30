@@ -53,7 +53,7 @@ namespace Application.Features.Users.Commands.CrateUserCommand
             if (usuarioExistente.Count > 0) throw new ApiException(MessageUserErrors.UserExist);
             if (string.IsNullOrEmpty(record.Image)) record.Image = UserConst.DEFAULTIMAGE;
             record.Edad = _userSerivice.CalcularEdad(record.DateOfBirth);
-            var data = await _repositoryAsync.AddAsync(record);
+            var data = await _repositoryAsync.AddAsync(record, cancellationToken);
             var result = _mapper.Map<UserDto>(data);
             return new Response<UserDto>(result,MessageUserErrors.CreatedUser);
         }
