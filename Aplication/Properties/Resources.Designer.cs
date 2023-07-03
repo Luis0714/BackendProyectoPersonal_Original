@@ -61,7 +61,8 @@ namespace Application.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a &lt;html lang=&quot;en&quot;&gt;
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;en&quot;&gt;
         ///
         ///&lt;head&gt;
         ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -78,8 +79,7 @@ namespace Application.Properties {
         ///
         ///        .container {
         ///            max-width: 600px;
-        ///            margin: 0 auto;
-        ///            padd [resto de la cadena truncado]&quot;;.
+        ///            margin: 0 auto;        /// [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string ResetPasswordTemplete {
             get {
