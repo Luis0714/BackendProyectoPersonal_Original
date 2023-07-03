@@ -6,7 +6,12 @@
         { 
 
         }
-        public Response(T data, string message = null)
+        public Response(T data)
+        {
+            Succeeded = true;
+            Data = data;
+        }
+        public Response(T data, string message)
         {
             Succeeded = true;
             Message = message;
@@ -19,8 +24,8 @@
             Message = message;
         }
         public bool Succeeded  { get; set; }
-        public List<string> Errors  { get; set; }
-        public string Message { get; set; }
-        public T Data { get; set; }
+        public List<string>? Errors  { get; set; }
+        public string? Message { get; set; }
+        public T? Data { get; set; }
     }
 }

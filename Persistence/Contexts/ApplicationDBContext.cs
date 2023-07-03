@@ -1,7 +1,7 @@
-﻿using Application.Interfaces;
-using Domain.Common;
+﻿using Domain.Common;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Shared.Services;
 using System.Reflection;
 
 namespace Persistence.Contexts

@@ -28,14 +28,14 @@ namespace WebAPI.Middlewares
                 { Succeeded = false, Message = error?.Message};
                 switch (error)
                 {
-                    case ApiException exception:
+                    case ApiException:
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
                     case ValidationException exception:
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         responseModel.Errors = exception.Errors;
                         break;
-                    case KeyNotFoundException exception:
+                    case KeyNotFoundException:
                         response.StatusCode = (int)HttpStatusCode.NotFound;
                         break;
                     default:

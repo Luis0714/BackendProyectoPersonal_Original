@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenseInfraestructure(builder.Configuration);
-builder.Services.AddSharedInfraestructure(builder.Configuration);
+builder.Services.AddSharedInfraestructure();
 builder.Services.AddApiVersioningExtensions();
 builder.Services.AddControllers();
 

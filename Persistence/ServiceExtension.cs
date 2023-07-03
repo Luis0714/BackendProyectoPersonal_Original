@@ -1,10 +1,11 @@
 ﻿using Application.Interfaces;
-using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Contexts;
 using Persistence.Repository;
+using Shared.Services;
+using Shared.Services.Implementation;
 
 namespace Persistence
 {
@@ -16,7 +17,7 @@ namespace Persistence
                 configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly(typeof(ApplicationDBContext).Assembly.FullName)
             ));
-
+            services.AddTransient<IDateTimeService, DateTimeService>();
             #region Repositories
             services.AddTransient(typeof(IRepositoryAsync<>), typeof(MyRepositoryAsync<>));
             #endregion

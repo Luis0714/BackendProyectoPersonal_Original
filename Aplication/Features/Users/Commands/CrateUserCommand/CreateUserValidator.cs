@@ -1,4 +1,4 @@
-﻿using Application.Execteptions.User;
+﻿using Application.Messages.User;
 using FluentValidation;
 
 namespace Application.Features.Users.Commands.CrateUserCommand

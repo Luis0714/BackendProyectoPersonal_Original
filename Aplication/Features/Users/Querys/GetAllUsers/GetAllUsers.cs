@@ -8,11 +8,11 @@ using MediatR;
 
 namespace Application.Features.Users.Querys.GetAllUsers
 {
-    public class GetAllUsers : IRequest<Response<List<UserDTO>>>
+    public class GetAllUsers : IRequest<Response<List<UserDto>>>
     {
 
     }
-    public class GetAlluserHandler : IRequestHandler<GetAllUsers, Response<List<UserDTO>>>
+    public class GetAlluserHandler : IRequestHandler<GetAllUsers, Response<List<UserDto>>>
     {
         private readonly IRepositoryAsync<User> _repositoryAsync;
         private readonly IMapper _mapper;
@@ -22,17 +22,17 @@ namespace Application.Features.Users.Querys.GetAllUsers
             _mapper = mapper;
         }
 
-        public async Task<Response<List<UserDTO>>> Handle(GetAllUsers request, CancellationToken cancellationToken)
+        public async Task<Response<List<UserDto>>> Handle(GetAllUsers request, CancellationToken cancellationToken)
         {
-            var lista = await _repositoryAsync.ListAsync(new GetAllUserSpecification());
-            var result = new List<UserDTO>();
+            var lista = await _repositoryAsync.ListAsync(new GetAllUserSpecification(), cancellationToken);
+            var result = new List<UserDto>();
             lista.ForEach(user =>
             {
-                var userDTO = _mapper.Map<UserDTO>(user);
+                var userDTO = _mapper.Map<UserDto>(user);
                 userDTO.Edad = new DateTime(DateTime.Now.Subtract(userDTO.DateOfBirth).Ticks).Year - 1;
                 result.Add(userDTO);
             });
-            return new Response<List<UserDTO>>(result);
+            return new Response<List<UserDto>>(result);
         }
     }
 }
