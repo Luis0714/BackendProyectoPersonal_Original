@@ -113,3 +113,6 @@ appsettings.json
 /.sonarqube/out/0/output-cs/token-cpd.pb
 /.sonarqube/out/0/output-cs/token-type.pb
 /.sonarqube/out/0/Issues.json
+/.vs/ProjectEvaluation/backendproyectopersonal.metadata.v7.bin
+/.vs/BackendProyectoPersonal/v17/.futdcache.v2
+/.vs/ProjectEvaluation/backendproyectopersonal.projects.v7.bin
